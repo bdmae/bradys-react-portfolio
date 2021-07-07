@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     background: #faf0ff;
     overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
 
   }
 
@@ -29,6 +30,7 @@ const GlobalStyle = createGlobalStyle`
     overflow:hidden;
     vertical-align: middle;
     transition: color 0.3s ease;
+    font-family: 'Inter', sans-serif;
 }
 
 button::before{
@@ -51,8 +53,13 @@ button:hover{
 }
 
 
+h1 {
+  font-weight: lighter;
+}
+
+
  h2{
-        font-weight: lighter;
+        font-family: 'Inter', sans-serif;
         font-size: 4rem;
     }
 
