@@ -66,6 +66,13 @@ const Projects = styled(About)`
     padding: 3rem 0rem;
     cursor: pointer;
   }
+
+  .project {
+    padding: 2rem 0rem;
+    p {
+      padding: 1rem 0rem;
+    }
+  }
 `;
 
 
