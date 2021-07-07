@@ -50,11 +50,6 @@ button:hover{
     color: white;
 }
 
-.image {
-  width: 30px;
-  height: 40px;
-  margin-right: 2rem;
-}
 
  h2{
         font-weight: lighter;

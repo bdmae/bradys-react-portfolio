@@ -8,12 +8,12 @@ const AboutSection = () => {
     <About>
       <Description>
         <div className="title">
-            <div className="hide">
+            <Hide>
              <h2>Hi there, I'm Brady.</h2>
-            </div>
-            <div className="hide">
+            </Hide>
+            <Hide>
               <h2>I'm a <span>front end fanatic</span>.</h2>
-            </div>
+            </Hide>
           </div>
               <p>
                My aim is to join the beautiful,
@@ -43,6 +43,9 @@ const Image = styled.div`
   flex: 1;
   display: flex;
   margin-left: 3rem;
+  img {
+    object-fit: cover;
+  }
 
 `;
 
@@ -52,6 +55,10 @@ const Description = styled.div`
   h2 {
     font-weight: lighter;
   }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
 export default AboutSection;
