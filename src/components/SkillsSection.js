@@ -2,6 +2,12 @@ import React from 'react';
 
 import computer from '../img/computer.png';
 
+//icons
+import past from '../img/past.png';
+import skills from '../img/skills.png';
+import coffee from '../img/coffee.png';
+import bulb from '../img/bulb.png';
+
 // import { faCogs } from "@fortawesome/free-solid-svg-icons";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -17,28 +23,28 @@ const SkillsSection = () => {
         <Cards>
           <Card>
             <div className="icon">
-              {/* <i class="fas fa-history"></i> */}
+              <img src={past} alt="my background" />
               <h3>My background</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
          </Card>
          <Card>
             <div className="icon">
-              {/* <FontAwesomeIcon icon={faCogs} /> */}
+              <img src={skills} alt="my technical skills" />
               <h3>What I learned</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
          </Card>
          <Card>
             <div className="icon">
-              {/*-mug-hot"></i> */}
+             <img src={coffee} alt="during my time off" />
               <h3>When I'm not coding..</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
          </Card>
          <Card>
             <div className="icon">
-              {/* lightbulb icon */}
+              <img src={bulb} alt="my future goals" />
               <h3>My goals</h3>
             </div>
             <p>Lorem ipsum dolor sit amet.</p>
@@ -75,12 +81,12 @@ const Cards = styled.div`
 `;
 
 const Card = styled.div`
-  flex-basis: 10rem;
+  flex-basis: 15rem;
   .icon {
     display: flex;
     align-items: center;
     h3 {
-      margin-left: 1rem;
+      margin-left: 2px;
       padding: 1rem;
     }
   }

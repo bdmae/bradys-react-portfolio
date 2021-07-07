@@ -5,9 +5,13 @@ import pranktprankssearch from '../img/pranktprankssearch.png';
 import weatherapp from '../img/weatherapp.png';
 import heymovielist from '../img/heymovielist.png';
 
+//style
+import styled from 'styled-components';
+import { About } from '../styles';
+
 const ProjectsSection = () => {
   return(
-    <div className="projects">
+    <Projects>
       <h2><span>Projects</span> I've been working on</h2>
       <div className="project-title">
         <h4>ConnecPet</h4>
@@ -43,8 +47,26 @@ const ProjectsSection = () => {
         </div>
       </div>
 
-    </div>
-  )
-}
+    </Projects>
+  );
+};
+
+const Projects = styled(About)`
+  display: block;
+  span {
+    display: block;
+  }
+
+  h2 {
+    padding-bottom: 2rem;
+    font-weight: lighter;
+  }
+
+  .project-title {
+    padding: 3rem 0rem;
+    cursor: pointer;
+  }
+`;
+
 
 export default ProjectsSection;

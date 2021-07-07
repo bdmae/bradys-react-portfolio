@@ -1,7 +1,8 @@
 import React from "react";
 import meatcomputer from '../img/meatcomputer.jpg';
+
 //styled
-import styled from 'styled-components';
+
 import { About, Description, Image, Hide } from "../styles";
 
 
@@ -32,7 +33,7 @@ const AboutSection = () => {
   );
 };
 
-//styled components
+//styled components in style.js
 
 
 export default AboutSection;
