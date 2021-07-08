@@ -1,5 +1,8 @@
 import {createGlobalStyle} from 'styled-components';
 
+
+// mint colour    #23d997;
+
 const GlobalStyle = createGlobalStyle`
   *{
     margin: 0;

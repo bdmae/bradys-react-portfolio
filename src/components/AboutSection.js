@@ -1,5 +1,5 @@
 import React from "react";
-import meatcomputer from '../img/meatcomputer.jpg';
+import bradyoncomputer from '../img/bradyoncomputer.png';
 
 //styled
 
@@ -27,7 +27,7 @@ const AboutSection = () => {
            <button>curriculum vitae</button>
           </Description>
         <Image>
-          <img src={meatcomputer} alt="myself" />
+          <img src={bradyoncomputer} alt="myself" />
       </Image>
     </About>
   );
