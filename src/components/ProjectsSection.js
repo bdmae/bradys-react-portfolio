@@ -1,6 +1,6 @@
 import React from 'react';
 import connecpet_homepage from '../img/connecpet_homepage.png';
-import eventspage from '../img/eventspage.jpg';
+// import eventspage from '../img/eventspage.jpg';
 import pranktprankssearch from '../img/pranktprankssearch.png';
 import weatherapp from '../img/weatherapp.png';
 import heymovielist from '../img/heymovielist.png';
