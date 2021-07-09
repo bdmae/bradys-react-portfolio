@@ -1,7 +1,7 @@
 import React from 'react';
 import connecpet_homepage from '../img/connecpet_homepage.png';
 // import eventspage from '../img/eventspage.jpg';
-import pranktprankssearch from '../img/pranktprankssearch.png';
+import prankthomepage from '../img/prankthomepage.png';
 import weatherapp from '../img/weatherapp.png';
 import heymovielist from '../img/heymovielist.png';
 
@@ -18,7 +18,7 @@ const ProjectsSection = () => {
         <p>snapshot description</p>
         <div className="project">
           <p>description of the project</p>
-          <img src={connecpet_homepage} alt="connecpet homepage" />
+          <img src={connecpet_homepage} alt="connecpet home page" />
           {/* <img src={eventspage} alt="connecpet events page" /> */}
         </div>
       </div>
@@ -26,16 +26,16 @@ const ProjectsSection = () => {
       <div className="project-title">
         <h4>Prankt</h4>
         <p>snapshot description</p>
-        <div className="project">
+        <div className="snapshot">
           <p>description of the project</p>
-          <img src={pranktprankssearch} alt="prank search page" />
+          <img src={prankthomepage} alt="prank home page" />
         </div>
       </div>
 
       <div className="project-title">
         <h4>Weather App Geocoding Project</h4>
         <p>snapshot description</p>
-        <div className="project">
+        <div className="snapshot">
           <p>description of the project</p>
           <img src={weatherapp} alt="weather app" />
         </div>
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
        <div className="project-title">
         <h4>HeyMovieList</h4>
         <p>snapshot description</p>
-        <div className="project">
+        <div className="snapshot">
           <p>description of the project</p>
           <img src={heymovielist} alt="movie list homepage" />
         </div>
@@ -70,7 +70,7 @@ const Projects = styled(About)`
     cursor: pointer;
   }
 
-  .project {
+  .snapshot {
     padding: 2rem 0rem;
     p {
       padding: 1rem 0rem;
