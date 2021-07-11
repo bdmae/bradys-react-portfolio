@@ -13,9 +13,13 @@ import { About } from '../styles';
 //links
 import {Link} from 'react-router-dom';
 
+//animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from "../animation";
+
 const MyWork = () => {
   return(
-    <Work>
+    <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <Project>
         <h2>ConnecPet</h2>
         <div className="line"></div>
@@ -48,8 +52,7 @@ const MyWork = () => {
         <div className="line"></div>
         <Wrapper>
          <Link>
-          <img src={heymovielist} alt="movie list homepage" />
-
+          <img src={heymovielist} alt="movie list homepage" id="movielist"/>
          </Link>
         </Wrapper>
       </Project>
@@ -57,7 +60,7 @@ const MyWork = () => {
   );
 };
 
-const Work = styled.div`
+const Work = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
@@ -80,6 +83,10 @@ const Project = styled.div`
   }
   img {
     padding: 1rem;
+  }
+
+  #movielist {
+    border-radius: 40px;
   }
 `;
 

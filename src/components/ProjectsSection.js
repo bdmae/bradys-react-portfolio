@@ -12,47 +12,31 @@ import { About } from '../styles';
 const ProjectsSection = () => {
   return(
     <Projects>
-      <h2><span>Projects</span> I've been working on</h2>
+      {/* <h2><span>Projects</span> I've been working on</h2>
       <div className="project-title">
         <h4>ConnecPet</h4>
         <p>snapshot description</p>
-        <div className="project">
-          <p>description of the project</p>
-          <img src={connecpet_homepage} alt="connecpet home page" />
-          {/* <img src={eventspage} alt="connecpet events page" /> */}
-        </div>
       </div>
 
       <div className="project-title">
         <h4>Prankt</h4>
         <p>snapshot description</p>
-        <div className="snapshot">
-          <p>description of the project</p>
-          <img src={prankthomepage} alt="prank home page" />
-        </div>
       </div>
 
       <div className="project-title">
         <h4>Weather App Geocoding Project</h4>
         <p>snapshot description</p>
-        <div className="snapshot">
-          <p>description of the project</p>
-          <img src={weatherapp} alt="weather app" />
-        </div>
       </div>
 
        <div className="project-title">
         <h4>HeyMovieList</h4>
         <p>snapshot description</p>
-        <div className="snapshot">
-          <p>description of the project</p>
-          <img src={heymovielist} alt="movie list homepage" />
-        </div>
-      </div>
-
+      </div> */}
     </Projects>
   );
 };
+
+
 
 const Projects = styled(About)`
   display: block;
