@@ -13,6 +13,7 @@ export const Image = styled.div`
   flex: 1;
   display: flex;
   margin-left: 3rem;
+  z-index: 2;
   img {
     object-fit: cover;
   }
@@ -22,6 +23,7 @@ export const Image = styled.div`
 export const Description = styled.div`
   flex: 1;
   padding-right: 5rem;
+  z-index: 2;
   h2 {
     font-weight: lighter;
   }

@@ -9,51 +9,58 @@ import heymovielist from '../img/heymovielist.png';
 //style
 import styled from 'styled-components';
 import { About } from '../styles';
+import { Hide } from '../styles';
 
 //links
 import {Link} from 'react-router-dom';
 
 //animations
 import { motion } from 'framer-motion';
-import { pageAnimation } from "../animation";
+import { pageAnimation, photoAnim, fade } from "../animation";
 
 const MyWork = () => {
-  return(
+  return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <Project>
-        <h2>ConnecPet</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>ConnecPet</motion.h2>
+        <motion.div className="line"></motion.div>
         <Wrapper>
-         <Link>
-          <img src={connecpet_booking} alt="connecpet petsitters booking page" />
-         </Link>
+          <Link>
+            <Hide>
+              <motion.img
+                variants={photoAnim}
+                src={connecpet_booking}
+                alt="connecpet petsitters booking page"
+              />
+            </Hide>
+          </Link>
         </Wrapper>
       </Project>
       <Project>
         <h2>Prankt</h2>
         <div className="line"></div>
         <Wrapper>
-         <Link>
-          <img src={pranktprankssearch} alt="prank search page" />
-         </Link>
+          <Link>
+            <img src={pranktprankssearch} alt="prank search page" />
+          </Link>
         </Wrapper>
       </Project>
       <Project>
         <h2>Weather App</h2>
         <div className="line"></div>
         <Wrapper>
-         <Link>
-           <img src={weatherapp} alt="weather app" />
-         </Link>
+          <Link>
+            <img src={weatherapp} alt="weather app" />
+          </Link>
         </Wrapper>
       </Project>
       <Project>
         <h2>HeyMovieList</h2>
         <div className="line"></div>
         <Wrapper>
-         <Link>
-          <img src={heymovielist} alt="movie list homepage" id="movielist"/>
-         </Link>
+          <Link>
+            <img src={heymovielist} alt="movie list homepage" id="movielist" />
+          </Link>
         </Wrapper>
       </Project>
     </Work>

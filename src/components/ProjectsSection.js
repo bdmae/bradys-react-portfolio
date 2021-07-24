@@ -1,11 +1,11 @@
-import React from 'react';
-import connecpet_homepage from '../img/connecpet_homepage.png';
-// import eventspage from '../img/eventspage.jpg';
-import prankthomepage from '../img/prankthomepage.png';
-import weatherapp from '../img/weatherapp.png';
-import heymovielist from '../img/heymovielist.png';
+// import React from 'react';
+// import connecpet_homepage from '../img/connecpet_homepage.png';
+// // import eventspage from '../img/eventspage.jpg';
+// import prankthomepage from '../img/prankthomepage.png';
+// import weatherapp from '../img/weatherapp.png';
+// import heymovielist from '../img/heymovielist.png';
 
-//style
+// //style
 import styled from 'styled-components';
 import { About } from '../styles';
 
