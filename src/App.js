@@ -9,7 +9,7 @@ import MyWork from './pages/MyWork';
 import Nav from './components/Nav';
 
 //router
-import { Switch, Route } from "react-router-dom";
+import { Switch, Route, useLocation } from "react-router-dom";
 
 //we surrounded our components within the route tag
 //on the route tag we can define a few properties
@@ -22,12 +22,17 @@ import { Switch, Route } from "react-router-dom";
 // we can't see the /work and /contact rendered out anymore
 // the exact key word allows us to match the url directly
 
+//to let the app know when the components have been mounted
+import { AnimatePresence } from 'framer-motion';
+
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <Switch>
+      <AnimatePresence exitBeforeEnter>
+      <Switch location={location} key={location.pathname}>
        <Route path="/" exact>
          <AboutMe />
        </Route>
@@ -38,6 +43,7 @@ function App() {
         <ContactMe />
        </Route>
       </Switch>
+      </AnimatePresence>
     </div>
   );
 }
