@@ -16,14 +16,21 @@ import {Link} from 'react-router-dom';
 
 //animations
 import { motion } from 'framer-motion';
-import { pageAnimation, photoAnim, fade } from "../animation";
+import { sliderContainer, slider, pageAnimation, photoAnim, fade, lineAnim } from "../animation";
 
 const MyWork = () => {
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
+      <motion.div variants={sliderContainer}>
+        <Frame1 variants={slider}></Frame1>
+        <Frame2 variants={slider}></Frame2>
+        <Frame3 variants={slider}></Frame3>
+        <Frame4 variants={slider}></Frame4>
+      </motion.div>
+
       <Project>
         <motion.h2 variants={fade}>ConnecPet</motion.h2>
-        <motion.div className="line"></motion.div>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
           <Link>
             <Hide>
@@ -85,7 +92,7 @@ const Project = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
-    background: #cccccc;
+    background: #23d997;
     margin-bottom: 3rem;
   }
   img {
@@ -96,5 +103,29 @@ const Project = styled.div`
     border-radius: 40px;
   }
 `;
+
+// frame animation
+const Frame1 = styled(motion.div)`
+   position: fixed;
+   left: 0;
+   top: 10%;
+   width: 100%;
+   height: 100vh;
+   background: #fffebf;
+   z-index: 2;
+`;
+
+const Frame2 = styled(Frame1)`
+   background: #ff8efb;
+
+   `;
+
+const Frame3 = styled(Frame1)`
+   background: #8ed2ff;
+   `;
+
+   const Frame4 = styled(Frame1)`
+   background: #8effa0;
+   `;
 
 export default MyWork;

@@ -1,37 +1,37 @@
-// import React from 'react';
-// import connecpet_homepage from '../img/connecpet_homepage.png';
-// // import eventspage from '../img/eventspage.jpg';
-// import prankthomepage from '../img/prankthomepage.png';
-// import weatherapp from '../img/weatherapp.png';
-// import heymovielist from '../img/heymovielist.png';
+import React from 'react';
+import connecpet_homepage from '../img/connecpet_homepage.png'; // import eventspage from '../img/eventspage.jpg';
+import prankthomepage from '../img/prankthomepage.png';
+import weatherapp from '../img/weatherapp.png';
+import heymovielist from '../img/heymovielist.png';
 
 // //style
 import styled from 'styled-components';
-import { About } from '../styles';
+import { About, Wrapper } from '../styles';
+import Toggle from "./Toggle";
 
 const ProjectsSection = () => {
-  return(
+  return (
     <Projects>
-      {/* <h2><span>Projects</span> I've been working on</h2>
-      <div className="project-title">
-        <h4>ConnecPet</h4>
-        <p>snapshot description</p>
-      </div>
+      <h2>
+        A <span>deeper</span> insight
+      </h2>
+      <Toggle title="A little more about me">
+        <div className="dropdown">
+          <p>snapshot description</p>
+        </div>
+      </Toggle>
+      <Toggle title="Projects snapshot">
+        <div className="dropdown">
+          <p>snapshot description</p>
+          <Wrapper>
+              <img src={connecpet_homepage} alt="connect pet homepage" />
+              <img src={prankthomepage} alt="prankt home page" />
+              <img src={weatherapp} alt="weather app" />
+              <img src={heymovielist} alt="movie list homepage" />
 
-      <div className="project-title">
-        <h4>Prankt</h4>
-        <p>snapshot description</p>
-      </div>
-
-      <div className="project-title">
-        <h4>Weather App Geocoding Project</h4>
-        <p>snapshot description</p>
-      </div>
-
-       <div className="project-title">
-        <h4>HeyMovieList</h4>
-        <p>snapshot description</p>
-      </div> */}
+          </Wrapper>
+        </div>
+      </Toggle>
     </Projects>
   );
 };
@@ -49,12 +49,12 @@ const Projects = styled(About)`
     font-weight: lighter;
   }
 
-  .project-title {
+  .section-title {
     padding: 3rem 0rem;
     cursor: pointer;
   }
 
-  .snapshot {
+  .dropdown {
     padding: 2rem 0rem;
     p {
       padding: 1rem 0rem;

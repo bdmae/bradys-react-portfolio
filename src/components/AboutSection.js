@@ -51,8 +51,10 @@ const AboutSection = () => {
               <motion.button variants={fade}>curriculum vitae</motion.button>
           </motion.div>
           </Description>
+          {/* if you want to get an image out of the staggering elemnets,
+          you can define an initial and a show */}
         <Image>
-          <motion.img variants={photoAnim} img src={bradyoncomputer} alt="myself" />
+          <motion.img variants={photoAnim} initial='hidden' animate='show'  src={bradyoncomputer} alt="myself" />
       </Image>
       <Wave />
     </About>
