@@ -30,12 +30,16 @@ const Nav = () => {
 // might cause problems later, since our tag name is called nav
 
 const StyledNav = styled.nav`
-  min-height: 10vh;
+  min-height: 8vh;
   display: flex;
   margin: auto;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 10rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
   a {
     color: black;
     text-decoration: none;

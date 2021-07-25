@@ -17,6 +17,7 @@ import {Link} from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { sliderContainer, slider, pageAnimation, photoAnim, fade, lineAnim } from "../animation";
 import {useScroll} from '../components/useScroll';
+import ScrollTop from '../components/ScrollTop';
 
 const MyWork = () => {
   const [element, controls] = useScroll();

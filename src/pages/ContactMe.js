@@ -19,15 +19,21 @@ const ContactMe = () => {
           <motion.h2 variants={titleAnim}>Drop me a message!</motion.h2>
         </Hide>
       </Title>
+      <Hide>
+        <Social variants={titleAnim}>
+          <Circle></Circle>
+        </Social>
+      </Hide>
+      <Hide>
+        <Social variants={titleAnim}>
+          <Circle></Circle>
+        </Social>
+      </Hide>
+      <Hide>
       <Social variants={titleAnim}>
         <Circle></Circle>
       </Social>
-      <Social variants={titleAnim}>
-        <Circle></Circle>
-      </Social>
-      <Social variants={titleAnim}>
-        <Circle></Circle>
-      </Social>
+      </Hide>
     </ContactStyle>
   );
 };

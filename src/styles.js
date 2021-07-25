@@ -6,7 +6,7 @@ export const About = styled(motion.div)`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 8rem;
+  padding: 2rem 8rem;
   color: black;
 `;
 
