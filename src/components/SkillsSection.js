@@ -8,16 +8,28 @@ import skills from '../img/skills.png';
 import coffee from '../img/coffee.png';
 import bulb from '../img/bulb.png';
 
-// import { faCogs } from "@fortawesome/free-solid-svg-icons";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 //styles
 import styled from 'styled-components';
 import { About, Description, Image } from '../styles';
 
+//scroll anim
+import { scrollReveal } from "../animation";
+import { useScroll } from './useScroll';
+
+//the view is saying true when you scroll.
+// we can specify WHEN something is true, we can do that with threshold
+// if we set it to 0.5, we're setting it half way down the frame
+// so we're saying if our elements are in view, start the animation - if not, hide
 const SkillsSection = () => {
-  return(
-    <Skills>
+   const [element, controls] = useScroll();
+  return (
+    <Skills
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+    >
       <Description>
          <h1>The <span>who</span> and the <span>what</span>.</h1>
         <Cards>

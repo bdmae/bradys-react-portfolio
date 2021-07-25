@@ -9,13 +9,15 @@ import styled from 'styled-components';
 import { About, Wrapper } from '../styles';
 import Toggle from "./Toggle";
 import { AnimateSharedLayout, motion } from "framer-motion";
-import { fade } from "../animation";
+import { scrollReveal, fade } from "../animation";
+import { useScroll } from "./useScroll";
 
 // animate shared layout detects whether our layout changed
 
 const ProjectsSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <Projects>
+    <Projects variants={scrollReveal} ref={element} animate={controls} initial="hidden">
       <h2>
         A <span>deeper</span> insight
       </h2>

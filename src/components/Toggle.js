@@ -9,7 +9,7 @@ import React, { useState } from "react";
 // you need to change every normal div to 'motion.div'
 
 const Toggle = ({ children, title }) => {
-  const [toggle, setToggle] = useState(true);
+  const [toggle, setToggle] = useState(false);
   return (
     <motion.div layout onClick={() => setToggle(!toggle)}>
       <motion.h4 layout variants={fade}>

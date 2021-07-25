@@ -8,7 +8,6 @@ import heymovielist from '../img/heymovielist.png';
 
 //style
 import styled from 'styled-components';
-import { About } from '../styles';
 import { Hide } from '../styles';
 
 //links
@@ -17,8 +16,11 @@ import {Link} from 'react-router-dom';
 //animations
 import { motion } from 'framer-motion';
 import { sliderContainer, slider, pageAnimation, photoAnim, fade, lineAnim } from "../animation";
+import {useScroll} from '../components/useScroll';
 
 const MyWork = () => {
+  const [element, controls] = useScroll();
+  const [element2, controls2] = useScroll();
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <motion.div variants={sliderContainer}>
@@ -43,30 +45,43 @@ const MyWork = () => {
           </Link>
         </Wrapper>
       </Project>
-      <Project>
-        <h2>Prankt</h2>
-        <div className="line"></div>
+      <Project
+      >
+        <motion.h2 variants={fade}>Prankt</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
           <Link>
-            <img src={pranktprankssearch} alt="prank search page" />
+            <motion.img
+              variants={photoAnim}
+              src={connecpet_booking}
+              alt="connecpet petsitters booking page"
+            />
           </Link>
         </Wrapper>
       </Project>
       <Project>
-        <h2>Weather App</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>Weather App</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
           <Link>
-            <img src={weatherapp} alt="weather app" />
+            <motion.img
+              variants={photoAnim}
+              src={connecpet_booking}
+              alt="connecpet petsitters booking page"
+            />
           </Link>
         </Wrapper>
       </Project>
       <Project>
-        <h2>HeyMovieList</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fade}>HeyMovieList</motion.h2>
+        <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
           <Link>
-            <img src={heymovielist} alt="movie list homepage" id="movielist" />
+            <motion.img
+              variants={photoAnim}
+              src={connecpet_booking}
+              alt="connecpet petsitters booking page"
+            />
           </Link>
         </Wrapper>
       </Project>
@@ -88,7 +103,7 @@ const Wrapper = styled.div`
   flex-direction: row;
 `;
 
-const Project = styled.div`
+const Project = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
