@@ -8,6 +8,10 @@ import heymovielist from '../img/heymovielist.png';
 import styled from 'styled-components';
 import { About, Wrapper } from '../styles';
 import Toggle from "./Toggle";
+import { AnimateSharedLayout, motion } from "framer-motion";
+import { fade } from "../animation";
+
+// animate shared layout detects whether our layout changed
 
 const ProjectsSection = () => {
   return (
@@ -15,23 +19,25 @@ const ProjectsSection = () => {
       <h2>
         A <span>deeper</span> insight
       </h2>
-      <Toggle title="A little more about me">
-        <div className="dropdown">
-          <p>snapshot description</p>
-        </div>
-      </Toggle>
-      <Toggle title="Projects snapshot">
-        <div className="dropdown">
-          <p>snapshot description</p>
-          <Wrapper>
+      <AnimateSharedLayout>
+        <Toggle title="A little more about me">
+          <div className="dropdown">
+            <p>snapshot description</p>
+          </div>
+        </Toggle>
+        <Toggle title="Projects snapshot">
+          <div className="dropdown">
+            <p>snapshot description</p>
+            <Wrapper>
               <img src={connecpet_homepage} alt="connect pet homepage" />
               <img src={prankthomepage} alt="prankt home page" />
               <img src={weatherapp} alt="weather app" />
               <img src={heymovielist} alt="movie list homepage" />
-
-          </Wrapper>
-        </div>
-      </Toggle>
+              <motion.button variants={fade}>curriculum vitae</motion.button>
+            </Wrapper>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </Projects>
   );
 };
