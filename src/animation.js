@@ -60,8 +60,8 @@ export const contactPhotoAnim = {
     scale: 1,
     opacity: 1,
     tranisition: {
-      ease: "easeOut",
-      duration: 0.75,
+      ease: "easeInOut",
+      duration: 1,
       delay: 1,
     },
   },
