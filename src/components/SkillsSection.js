@@ -31,47 +31,63 @@ const SkillsSection = () => {
       ref={element}
     >
       <Description>
-         <h1>The <span>who</span> and the <span>what</span>.</h1>
+        <h1>
+          The <span>who</span> and the <span>what</span>.
+        </h1>
         <Cards>
           <Card>
             <div className="icon">
               <img src={past} alt="my background" />
               <h3>My background</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-         </Card>
-         <Card>
+            <p>
+              A girl from a small village in the UK. The smell of farms and
+              pastry makes me feel quite at home. Fell in love with Joe Hisaishi's compositions at 12 years of age and longed to experience Japan ever since.
+            </p>
+          </Card>
+          <Card>
             <div className="icon">
               <img src={skills} alt="my technical skills" />
-              <h3>What I learned</h3>
+              <h3>My Journey</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-         </Card>
-         <Card>
+            <p>
+              Began coding during the 2020 pandemic, and "If you
+              can't stop thinking about it, don't stop working for it." so I left my life in Osaka behind and
+              graduated from LeWagon bootcamp, joined a reputable tech start up
+              where I met incredible people and gained many new skills.
+            </p>
+          </Card>
+          <Card>
             <div className="icon">
-             <img src={coffee} alt="during my time off" />
+              <img src={coffee} alt="during my time off" />
               <h3>When I'm not coding..</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-         </Card>
-         <Card>
+            <p>
+              My more productive hobbies include learning languages such as
+              Japanese & Korean. On the slightly less productive side... a
+              slight obsession with Kdrama and second hand shopping.
+            </p>
+          </Card>
+          <Card>
             <div className="icon">
               <img src={bulb} alt="my future goals" />
               <h3>My goals</h3>
             </div>
-            <p>Lorem ipsum dolor sit amet.</p>
-         </Card>
-       </Cards>
-       </Description>
-       <Image>
-         <img src={computer} alt="computer" />
-       </Image>
-   </Skills>
+            <p>
+              To contribute even further to a world of beautiful, intuitively
+              designed pages with the help of JS frameworks such as React.
+            </p>
+          </Card>
+        </Cards>
+      </Description>
+      <Image>
+        <img src={computer} alt="computer" />
+      </Image>
+    </Skills>
   );
 };
 
 const Skills = styled(About)`
-  padding-right: 5rem;
 
   h1 {
     padding-bottom: 5rem;
@@ -88,8 +104,8 @@ const Skills = styled(About)`
 `;
 
 const Cards = styled.div`
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 50% 50%;
 `;
 
 const Card = styled.div`

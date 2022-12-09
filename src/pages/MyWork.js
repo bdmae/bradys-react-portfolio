@@ -1,27 +1,38 @@
-import React from 'react';
+import { useEffect, useRef } from "react";
 
 import connecpet_booking from '../img/connecpet_booking.png';
 // import eventspage from '../img/eventspage.jpg';
 import pranktprankssearch from '../img/pranktprankssearch.png';
-import weatherapp from '../img/weatherapp.png';
-import heymovielist from '../img/heymovielist.png';
+import nekojita from "../img/nekojita.png";
+import tofudovideo from "../videos/tofudovideo.mov";
+
 
 //style
 import styled from 'styled-components';
-import { Hide } from '../styles';
+import { Description, Hide, ColumnWrapper } from '../styles';
 
 //links
 import {Link} from 'react-router-dom';
 
 //animations
 import { motion } from 'framer-motion';
-import { sliderContainer, slider, pageAnimation, photoAnim, fade, lineAnim } from "../animation";
+import {
+  sliderContainer,
+  slider,
+  pageAnimation,
+  photoAnim,
+  fade,
+  lineAnim,
+  titleAnim,
+} from "../animation";
 import {useScroll} from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
 
 const MyWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
+
+
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <motion.div variants={sliderContainer}>
@@ -32,60 +43,106 @@ const MyWork = () => {
       </motion.div>
 
       <Project>
-        <motion.h2 variants={fade}>ConnecPet</motion.h2>
+        <motion.h2 variants={fade}>Nekojita Blog Site</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
-          <Link>
-            <Hide>
-              <motion.img
-                variants={photoAnim}
-                src={connecpet_booking}
-                alt="connecpet petsitters booking page"
-              />
-            </Hide>
-          </Link>
+          <a href="https://nekojita.netlify.app/">
+            <motion.img
+              width="90%"
+              variants={photoAnim}
+              src={nekojita}
+              alt="Nekojita blog site landing page"
+            />
+          </a>
         </Wrapper>
+        <Description>
+          <p>
+            A creative project, trying out various design concepts and bringing
+            them to life through JS and Framer Motion animation. Developing it
+            into a real platform where I can share my stories and experiences in
+            Japan.
+          </p>
+          <Social variants={titleAnim} className="social">
+            <Circle></Circle>
+            <a href="https://nekojita.netlify.app/">
+              <h3>Website</h3>
+            </a>
+          </Social>
+        </Description>
       </Project>
-      <Project
-      >
+      <Project>
         <motion.h2 variants={fade}>Prankt</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
-          <Link>
+          <a href="https://prankt.herokuapp.com">
             <motion.img
               variants={photoAnim}
-              src={connecpet_booking}
-              alt="connecpet petsitters booking page"
+              src={pranktprankssearch}
+              alt="list of pranks done by professional pranksters"
             />
-          </Link>
+          </a>
         </Wrapper>
+        <Description>
+          <p>
+            A lighthearted, collaborative project Airbnb-inspired web
+            application which allows people to "book a prank" on their friends
+            and family, done by a "professional prankster".
+          </p>
+          <Social variants={titleAnim} className="social">
+            <Circle></Circle>
+            <a href="https://prankt.herokuapp.com">
+              <h3>Website</h3>
+            </a>
+          </Social>
+        </Description>
       </Project>
       <Project>
-        <motion.h2 variants={fade}>Weather App</motion.h2>
+        <motion.h2 variants={fade}>Tofudo</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
-        <Wrapper>
-          <Link>
-            <motion.img
-              variants={photoAnim}
-              src={connecpet_booking}
-              alt="connecpet petsitters booking page"
-            />
-          </Link>
-        </Wrapper>
+        <ColumnWrapper>
+          <div className="inner-wrapper">
+            <video
+              src={tofudovideo}
+              controls
+              width="90%"
+              muted
+              autoPlay={"autoplay"}
+              preLoad="auto"
+              loop
+            >
+              {" "}
+              Tofudo video not able to load.
+            </video>
+          </div>
+          <Description>
+            <p>
+              A minimalist todo list with CRUD functionality and fetching from a
+              weather api, built in React JS.
+            </p>
+          </Description>
+        </ColumnWrapper>
       </Project>
       <Project>
-        <motion.h2 variants={fade}>HeyMovieList</motion.h2>
+        <motion.h2 variants={fade}>ConnecPet</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
-          <Link>
+          <Link to="https://connecpet.org">
             <motion.img
               variants={photoAnim}
               src={connecpet_booking}
               alt="connecpet petsitters booking page"
             />
           </Link>
+          <Description>
+            <p>
+              Collaborative project based on our shared love for pets, creating
+              an application that connecting pet owners and pet sitters on a fun
+              SNS platform.
+            </p>
+          </Description>
         </Wrapper>
       </Project>
+      <ScrollTop />
     </Work>
   );
 };
@@ -105,7 +162,7 @@ const Wrapper = styled.div`
 `;
 
 const Project = styled(motion.div)`
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
   .line {
     height: 0.5rem;
     background: #23d997;
@@ -142,6 +199,21 @@ const Frame3 = styled(Frame1)`
 
    const Frame4 = styled(Frame1)`
    background: #8effa0;
+   `;
+
+   const Circle = styled.div`
+     border-radius: 50%;
+     width: 3rem;
+     height: 3rem;
+     background: #353535;
+   `;
+
+   const Social = styled(motion.div)`
+     display: flex;
+     align-items: center;
+     h2 {
+       margin: 2rem;
+     }
    `;
 
 export default MyWork;

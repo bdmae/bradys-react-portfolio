@@ -54,6 +54,20 @@ export const photoAnim = {
   },
 };
 
+export const contactPhotoAnim = {
+  hidden: { scale: 1.5, opacity: 0 },
+  show: {
+    scale: 1,
+    opacity: 1,
+    tranisition: {
+      ease: "easeOut",
+      duration: 0.75,
+      delay: 1,
+    },
+  },
+};
+
+
 //if you want to define width in framer motion you use quotes
 export const lineAnim = {
   hidden: {width: '0%'},

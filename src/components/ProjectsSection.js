@@ -18,7 +18,7 @@ const ProjectsSection = () => {
   const [element, controls] = useScroll();
   return (
     <Projects variants={scrollReveal} ref={element} animate={controls} initial="hidden">
-      <h2>
+      {/* <h2>
         A <span>deeper</span> insight
       </h2>
       <AnimateSharedLayout>
@@ -26,8 +26,8 @@ const ProjectsSection = () => {
           <div className="dropdown">
             <p>snapshot description</p>
           </div>
-        </Toggle>
-        <Toggle title="Projects snapshot">
+        </Toggle> */}
+        {/* <Toggle title="Projects snapshot">
           <div className="dropdown">
             <p>snapshot description</p>
             <Wrapper>
@@ -38,8 +38,8 @@ const ProjectsSection = () => {
               <motion.button variants={fade}>curriculum vitae</motion.button>
             </Wrapper>
           </div>
-        </Toggle>
-      </AnimateSharedLayout>
+        </Toggle> */}
+      {/* </AnimateSharedLayout> */}
     </Projects>
   );
 };
