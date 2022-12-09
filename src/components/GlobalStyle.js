@@ -63,7 +63,7 @@ button::before{
     top: 0;
     height: 100%;
     width:0%;
-    background-color: #957fc5;
+    background-color: #23d997;
     z-index: -1;
     transition: width 0.3s ease;
 }

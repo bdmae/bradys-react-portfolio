@@ -11,7 +11,7 @@ import bulb from '../img/bulb.png';
 
 //styles
 import styled from 'styled-components';
-import { About, Description, Image } from '../styles';
+import { About, Description } from '../styles';
 
 //scroll anim
 import { scrollReveal } from "../animation";
@@ -42,7 +42,9 @@ const SkillsSection = () => {
             </div>
             <p>
               A girl from a small village in the UK. The smell of farms and
-              pastry makes me feel quite at home. Fell in love with Joe Hisaishi's compositions at 12 years of age and longed to experience Japan ever since.
+              pastry makes me feel quite at home.
+              Fell in love with Joe Hisaishi's compositions at 12 years of age and
+              longed to experience Japan ever since.
             </p>
           </Card>
           <Card>
@@ -76,6 +78,8 @@ const SkillsSection = () => {
             <p>
               To contribute even further to a world of beautiful, intuitively
               designed pages with the help of JS frameworks such as React.
+              To be able to create any inspiring design
+              and to bring it to life.
             </p>
           </Card>
         </Cards>
@@ -88,6 +92,9 @@ const SkillsSection = () => {
 };
 
 const Skills = styled(About)`
+  display: block;
+  padding: 2rem 2rem;
+  text-align: center;
 
   h1 {
     padding-bottom: 5rem;
@@ -101,6 +108,10 @@ const Skills = styled(About)`
     width: 80%;
     padding: 2rem 0rem 4rem 0rem;
   }
+
+  img {
+    width: 40%;
+  }
 `;
 
 const Cards = styled.div`
@@ -108,7 +119,15 @@ const Cards = styled.div`
   grid-template-columns: 50% 50%;
 `;
 
+const Image = styled.div`
+  width: 100%;
+`;
+
 const Card = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-basis: 15rem;
   .icon {
     display: flex;

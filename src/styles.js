@@ -15,6 +15,17 @@ export const About = styled(motion.div)`
   }
 `;
 
+export const AboutSkills = styled(motion.div)`
+  min-height: 90vh;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  display: block;
+  padding: 2rem 2rem;
+  text-align: center;
+`;
+
+
 export const Image = styled.div`
   flex: 1;
   display: flex;
