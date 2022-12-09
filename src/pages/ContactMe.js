@@ -88,7 +88,7 @@ const ContactMe = () => {
 const ContactStyle = styled(motion.div)`
    padding: 5rem;
    color: #353535;
-   min-height: 90vh;
+   max-height: 50vh;
    display: flex;
    flex-direction: column;
 `;
@@ -104,6 +104,11 @@ const SocialsLinks = styled.div`
 
 const SocialsWrappers = styled.div`
   display: flex;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 const Image = styled.div`
@@ -117,18 +122,11 @@ const Image = styled.div`
   img {
     object-fit: cover;
     width: 30%;
-    /* position: fixed;
-    bottom:0;
-    left: 50%; */
   }
 
   @media (max-width: 1100px) {
     margin-left: unset;
     justify-content: center;
-
-    img {
-      width: 60%;
-    }
   }
 `;
 
