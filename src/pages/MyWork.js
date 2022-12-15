@@ -4,6 +4,7 @@ import connecpet_booking from '../img/connecpet_booking.png';
 // import eventspage from '../img/eventspage.jpg';
 import pranktprankssearch from '../img/pranktprankssearch.png';
 import nekojita from "../img/nekojita.png";
+import imeji from "../img/imeji.png";
 import tofudovideo from "../videos/tofudovideo.mov";
 
 
@@ -42,27 +43,27 @@ const MyWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
 
-      {/* <Project>
+      <Project>
         <motion.h2 variants={fade}>imeji</motion.h2>
-        <motion.h3 variants={fade}>Image Gallery</motion.h3>
+        <motion.h3 variants={fade}>Image gallery</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
           <a href="https://imeji.netlify.app/">
             <motion.img
               width="90%"
               variants={photoAnim}
-              src={nekojita}
-              alt="Nekojita blog site landing page"
+              src={imeji}
+              alt="Imeji image gallery"
             />
           </a>
         </Wrapper>
         <Description>
           <p>
-            An Image gallery concept built in JS, using pexels api to be able to
+            An Image gallery concept built in JS, using <a href="https://www.pexels.com/api/">pexels api</a> to be able to
             search any image.
           </p>
         </Description>
-      </Project> */}
+      </Project>
       <Project>
         <motion.h2 variants={fade}>nekojita</motion.h2>
         <motion.h3 variants={fade}>Blog website concept</motion.h3>
@@ -120,7 +121,7 @@ const MyWork = () => {
       </Project> */}
       <Project>
         <motion.h2 variants={fade}>tofudo</motion.h2>
-        <motion.h3 variants={fade}>Todo List Manager</motion.h3>
+        <motion.h3 variants={fade}>Todo list manager</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <ColumnWrapper>
           <div className="inner-wrapper">
