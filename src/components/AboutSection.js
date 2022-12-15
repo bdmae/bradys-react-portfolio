@@ -4,7 +4,6 @@ import brady from '../img/me.svg';
 //styled
 
 import { About, Description, Image, Hide } from "../styles";
-import { Link } from "react-router-dom";
 //Framer Motion
 import { motion } from 'framer-motion';
 import { fade } from "../animation";

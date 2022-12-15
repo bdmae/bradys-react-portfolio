@@ -2,7 +2,6 @@ import { useEffect, useRef } from "react";
 
 import connecpet_booking from '../img/connecpet_booking.png';
 // import eventspage from '../img/eventspage.jpg';
-import pranktprankssearch from '../img/pranktprankssearch.png';
 import nekojita from "../img/nekojita.png";
 import imeji from "../img/imeji.png";
 import tofudovideo from "../videos/tofudovideo.mov";
@@ -10,7 +9,7 @@ import tofudovideo from "../videos/tofudovideo.mov";
 
 //style
 import styled from 'styled-components';
-import { Description, Hide, ColumnWrapper } from '../styles';
+import { Description, ColumnWrapper } from '../styles';
 
 //links
 import {Link} from 'react-router-dom';
@@ -23,15 +22,12 @@ import {
   pageAnimation,
   photoAnim,
   fade,
-  lineAnim,
-  titleAnim,
+  lineAnim
 } from "../animation";
 import {useScroll} from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
 
 const MyWork = () => {
-  const [element, controls] = useScroll();
-  const [element2, controls2] = useScroll();
 
 
   return (

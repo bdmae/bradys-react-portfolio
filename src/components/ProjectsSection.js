@@ -1,15 +1,9 @@
 import React from 'react';
-import connecpet_homepage from '../img/connecpet_homepage.png'; // import eventspage from '../img/eventspage.jpg';
-import prankthomepage from '../img/prankthomepage.png';
-import weatherapp from '../img/weatherapp.png';
-import heymovielist from '../img/heymovielist.png';
 
 // //style
 import styled from 'styled-components';
-import { About, Wrapper } from '../styles';
-import Toggle from "./Toggle";
-import { AnimateSharedLayout, motion } from "framer-motion";
-import { scrollReveal, fade } from "../animation";
+import { About } from '../styles';
+import { scrollReveal } from "../animation";
 import { useScroll } from "./useScroll";
 
 // animate shared layout detects whether our layout changed
