@@ -86,7 +86,7 @@ h1 {
         font-size: 4rem;
     }
 
-p {
+    p {
         padding: 3rem 0rem;
         color: #000;
         font-size: 1.4rem;

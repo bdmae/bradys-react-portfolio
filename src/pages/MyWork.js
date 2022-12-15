@@ -42,8 +42,30 @@ const MyWork = () => {
         <Frame4 variants={slider}></Frame4>
       </motion.div>
 
+      {/* <Project>
+        <motion.h2 variants={fade}>imeji</motion.h2>
+        <motion.h3 variants={fade}>Image Gallery</motion.h3>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <Wrapper>
+          <a href="https://imeji.netlify.app/">
+            <motion.img
+              width="90%"
+              variants={photoAnim}
+              src={nekojita}
+              alt="Nekojita blog site landing page"
+            />
+          </a>
+        </Wrapper>
+        <Description>
+          <p>
+            An Image gallery concept built in JS, using pexels api to be able to
+            search any image.
+          </p>
+        </Description>
+      </Project> */}
       <Project>
-        <motion.h2 variants={fade}>Nekojita Blog Site</motion.h2>
+        <motion.h2 variants={fade}>nekojita</motion.h2>
+        <motion.h3 variants={fade}>Blog website concept</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
           <a href="https://nekojita.netlify.app/">
@@ -62,15 +84,15 @@ const MyWork = () => {
             into a real platform where I can share my stories and experiences in
             Japan.
           </p>
-          <Social variants={titleAnim} className="social">
+          {/* <Social variants={titleAnim} className="social">
             <Circle></Circle>
             <a href="https://nekojita.netlify.app/">
               <h3>Website</h3>
             </a>
-          </Social>
+          </Social> */}
         </Description>
       </Project>
-      <Project>
+      {/* <Project>
         <motion.h2 variants={fade}>Prankt</motion.h2>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
@@ -95,9 +117,10 @@ const MyWork = () => {
             </a>
           </Social>
         </Description>
-      </Project>
+      </Project> */}
       <Project>
-        <motion.h2 variants={fade}>Tofudo</motion.h2>
+        <motion.h2 variants={fade}>tofudo</motion.h2>
+        <motion.h3 variants={fade}>Todo List Manager</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <ColumnWrapper>
           <div className="inner-wrapper">
@@ -124,6 +147,7 @@ const MyWork = () => {
       </Project>
       <Project>
         <motion.h2 variants={fade}>ConnecPet</motion.h2>
+        <motion.h3 variants={fade}>SNS application</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <Wrapper>
           <Link to="https://connecpet.org">
@@ -135,10 +159,19 @@ const MyWork = () => {
           </Link>
           <Description>
             <p>
-              Collaborative project based on our shared love for pets, creating
-              an application that connecting pet owners and pet sitters on a fun
-              SNS platform.
+              Collaborative project at Le Wagon Coding Bootcamp, based on our
+              shared love for pets, creating an application that connecting pet
+              owners and pet sitters on a fun SNS platform.
             </p>
+            <iframe
+              width="580"
+              height="360"
+              src="https://www.youtube.com/embed/Tqgv8XiOPMI?t=590"
+              title="Web Development Coding Bootcamp Tokyo | Le Wagon Demo Day - Spring 2021"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
           </Description>
         </Wrapper>
       </Project>
@@ -172,6 +205,10 @@ const Project = styled(motion.div)`
     padding: 1rem;
   }
 
+  h3 {
+    margin-bottom: 1rem;
+  }
+
   #movielist {
     border-radius: 40px;
   }
@@ -201,19 +238,5 @@ const Frame3 = styled(Frame1)`
    background: #8effa0;
    `;
 
-   const Circle = styled.div`
-     border-radius: 50%;
-     width: 3rem;
-     height: 3rem;
-     background: #353535;
-   `;
-
-   const Social = styled(motion.div)`
-     display: flex;
-     align-items: center;
-     h2 {
-       margin: 2rem;
-     }
-   `;
 
 export default MyWork;
