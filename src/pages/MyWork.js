@@ -55,7 +55,8 @@ const MyWork = () => {
         </Wrapper>
         <Description>
           <p>
-            An Image gallery concept built in JS, using <a href="https://www.pexels.com/api/">pexels api</a> to be able to
+            An Image gallery concept built in JS, using{" "}
+            <a href="https://www.pexels.com/api/">pexels api</a> to be able to
             search any image.
           </p>
         </Description>
