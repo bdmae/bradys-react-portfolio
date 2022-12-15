@@ -9,7 +9,7 @@ import MyWork from './pages/MyWork';
 import Nav from './components/Nav';
 
 //router
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 //we surrounded our components within the route tag
 //on the route tag we can define a few properties
@@ -32,17 +32,17 @@ function App() {
       <GlobalStyle />
       <Nav />
       <AnimatePresence exitBeforeEnter>
-      <Switch location={location} key={location.pathname}>
-       <Route path="/" exact>
-         <AboutMe />
-       </Route>
-       <Route path="/work">
-        <MyWork />
-       </Route>
-       <Route path="/contact">
-        <ContactMe />
-       </Route>
-      </Switch>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" exact>
+            <AboutMe />
+          </Route>
+          <Route path="/work">
+            <MyWork />
+          </Route>
+          <Route path="/contact">
+            <ContactMe />
+          </Route>
+        </Routes>
       </AnimatePresence>
     </div>
   );
