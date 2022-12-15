@@ -41,10 +41,15 @@ const SkillsSection = () => {
               <h3>My background</h3>
             </div>
             <p>
-              A girl from a small village in the UK. The smell of farms and
+              {/* A girl from a small village in the UK. The smell of farms and
               pastry makes me feel quite at home.
               Fell in love with Joe Hisaishi's compositions at 12 years of age and
-              longed to experience Japan ever since.
+              longed to experience Japan ever since. */}
+              Began coding during the 2020 pandemic, and "If you can't stop
+              thinking about it, don't stop working for it." so I left my life
+              in Osaka behind and graduated from LeWagon bootcamp, joined a
+              reputable tech start up where I met incredible people and gained
+              many new skills.
             </p>
           </Card>
           <Card>
@@ -53,10 +58,8 @@ const SkillsSection = () => {
               <h3>My Journey</h3>
             </div>
             <p>
-              Began coding during the 2020 pandemic, and "If you
-              can't stop thinking about it, don't stop working for it." so I left my life in Osaka behind and
-              graduated from LeWagon bootcamp, joined a reputable tech start up
-              where I met incredible people and gained many new skills.
+              On a professional level, I mainly work with JavaScript, React, PHP and SQL.
+              I build most of my personal projects using React because I'm in love with the intuitivity and the way it encourages you a component-based mindset.
             </p>
           </Card>
           <Card>
@@ -77,9 +80,8 @@ const SkillsSection = () => {
             </div>
             <p>
               To contribute even further to a world of beautiful, intuitively
-              designed pages with the help of JS frameworks such as React.
-              To be able to create any inspiring design
-              and to bring it to life.
+              designed pages with the help of JS frameworks such as React. To be
+              able to create any inspiring design and to bring it to life.
             </p>
           </Card>
         </Cards>

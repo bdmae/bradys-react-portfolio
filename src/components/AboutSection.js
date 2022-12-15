@@ -51,7 +51,7 @@ const AboutSection = () => {
             My aim is to join the beautiful, messy world of design and front-end
             development.
           </motion.p>
-          <a href="https://www.canva.com/design/DAFTkwgDMsI/lK9F7hKLm5FErxXcH_olQQ/view?utm_content=DAFTkwgDMsI&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+          <a href="https://www.canva.com/design/DAFUnWYOfSM/vXZB9JT6tmWZPuIR4EXiWg/view?utm_content=DAFUnWYOfSM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
             <motion.button variants={fade}>curriculum vitae</motion.button>
           </a>
         </motion.div>
