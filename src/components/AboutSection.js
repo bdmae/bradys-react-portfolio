@@ -7,7 +7,7 @@ import { About, Description, Image, Hide } from "../styles";
 //Framer Motion
 import { motion } from 'framer-motion';
 import { fade } from "../animation";
-import { photoAnim } from "../animation";
+import { photoAnim, descAnim } from "../animation";
 import Wave from "./Wave";
 //if we want to target an element to make an animation,
 // we simply put "motion." in the tag
@@ -51,8 +51,8 @@ const AboutSection = () => {
             My aim is to join the beautiful, messy world of design and front-end
             development.
           </motion.p>
-          <a href="https://www.canva.com/design/DAFUnWYOfSM/vXZB9JT6tmWZPuIR4EXiWg/view?utm_content=DAFUnWYOfSM&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
-            <motion.button variants={fade}>curriculum vitae</motion.button>
+          <a href="https://www.linkedin.com/in/brady-dornan1996/">
+            <motion.button variants={fade}>let's connect!</motion.button>
           </a>
         </motion.div>
       </Description>

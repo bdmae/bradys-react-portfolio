@@ -11,29 +11,11 @@ import { useScroll } from "./useScroll";
 const ProjectsSection = () => {
   const [element, controls] = useScroll();
   return (
-    <Projects variants={scrollReveal} ref={element} animate={controls} initial="hidden">
-      {/* <h2>
-        A <span>deeper</span> insight
-      </h2>
-      <AnimateSharedLayout>
-        <Toggle title="A little more about me">
-          <div className="dropdown">
-            <p>snapshot description</p>
-          </div>
-        </Toggle> */}
-        {/* <Toggle title="Projects snapshot">
-          <div className="dropdown">
-            <p>snapshot description</p>
-            <Wrapper>
-              <img src={connecpet_homepage} alt="connect pet homepage" />
-              <img src={prankthomepage} alt="prankt home page" />
-              <img src={weatherapp} alt="weather app" />
-              <img src={heymovielist} alt="movie list homepage" />
-              <motion.button variants={fade}>curriculum vitae</motion.button>
-            </Wrapper>
-          </div>
-        </Toggle> */}
-      {/* </AnimateSharedLayout> */}
+    <Projects 
+      variants={scrollReveal}
+      ref={element}
+      animate={controls}
+      initial="hidden">
     </Projects>
   );
 };

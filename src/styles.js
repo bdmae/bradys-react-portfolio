@@ -9,9 +9,9 @@ export const About = styled(motion.div)`
   padding: 2rem 8rem;
   color: black;
   @media (max-width: 1100px) {
-    display: block;
     padding: 2rem 2rem;
     text-align: center;
+    flex-direction: column;
   }
 `;
 
@@ -50,13 +50,12 @@ export const Image = styled.div`
 
 export const Description = styled.div`
   flex: 1;
-  padding-right: 4rem;
   z-index: 2;
+  padding: 1rem 0;
   h2 {
     font-weight: lighter;
   }
   @media (max-width: 1100px) {
-  padding:0;
     button {
       margin: 2rem 0rem 5rem 0rem;
     }
@@ -67,9 +66,20 @@ export const Hide = styled.div`
   overflow: hidden;
 `;
 
-export const Wrapper = styled.div`
+export const TagsWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 0.8rem;
+`;
+
+export const RowWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
 `;
 
 export const ColumnWrapper = styled.div`

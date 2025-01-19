@@ -6,16 +6,15 @@ import ProjectsSection from "../components/ProjectsSection";
 
 //animations
 import { motion } from 'framer-motion';
-import { pageAnimation } from "../animation";
-import ScrollTop from "../components/ScrollTop";
+import { pageAnimation, fade } from "../animation";
+// import ScrollTop from "../components/ScrollTop";
 
 const AboutMe = () => {
     return (
-     <motion.div exit="exit" variants={pageAnimation} initial="hidden" animate="show">
+     <motion.div exit="exit" variants={fade} initial="hidden" animate="show">
       <AboutSection />
       <SkillsSection />
-      {/* <ProjectsSection /> */}
-      <ScrollTop/>
+      {/* <ScrollTop/> */}
      </motion.div>
    );
 };

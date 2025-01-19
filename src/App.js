@@ -9,7 +9,7 @@ import MyWork from './pages/MyWork';
 import Nav from './components/Nav';
 
 //router
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 
 //we surrounded our components within the route tag
 //on the route tag we can define a few properties
@@ -22,8 +22,12 @@ import { Switch, Route, useLocation } from "react-router-dom";
 // we can't see the /work and /contact rendered out anymore
 // the exact key word allows us to match the url directly
 
+
+// Switch is depricated - use Routes instead
+
 //to let the app know when the components have been mounted
 import { AnimatePresence } from 'framer-motion';
+import { useEffect } from 'react';
 
 function App() {
   const location = useLocation();
@@ -31,18 +35,12 @@ function App() {
     <div className="App">
       <GlobalStyle />
       <Nav />
-      <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
-          <Route path="/" exact>
-            <AboutMe />
-          </Route>
-          <Route path="/work">
-            <MyWork />
-          </Route>
-          <Route path="/contact">
-            <ContactMe />
-          </Route>
-        </Switch>
+      <AnimatePresence>
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<AboutMe />} />
+          <Route path="/work" element={<MyWork />} />
+          <Route path="/contact" element={<ContactMe />} />
+        </Routes>
       </AnimatePresence>
     </div>
   );

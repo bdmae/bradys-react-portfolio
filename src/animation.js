@@ -54,6 +54,18 @@ export const photoAnim = {
   },
 };
 
+export const descAnim = {
+  idden: {scale: 1.5, opacity: 0},
+  show: {
+    scale: 1,
+    opacity: 1,
+    tranisition: {
+      ease: 'easeOut',
+      duration: 1
+    },
+  },
+}
+
 export const contactPhotoAnim = {
   hidden: { scale: 1.5, opacity: 0 },
   show: {

@@ -4,6 +4,24 @@ import {createGlobalStyle} from 'styled-components';
 // mint colour    #23d997;
 
 const GlobalStyle = createGlobalStyle`
+  @font-face {
+    font-family: 'HelveticaNowText';
+    src: url('./fonts/HelveticaNowText-Regular.woff2') format('woff2'),
+         url('./fonts/HelveticaNowText-Regular.woff') format('woff'),
+         url('./fonts/HelveticaNowText-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'HelveticaNowText-bold';
+    src: url('./fonts/HelveticaNowText-Bold.woff2') format('woff2'),
+         url('./fonts/HelveticaNowText-Bold.woff') format('woff'),
+         url('./fonts/HelveticaNowText-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }
+
   *{
     margin: 0;
     padidng: 0;
@@ -20,7 +38,6 @@ const GlobalStyle = createGlobalStyle`
     background: #fffbf0;
     overflow-x: hidden;
     font-family: 'Inter', sans-serif;
-
   }
 
   .social {
@@ -82,7 +99,8 @@ h1 {
 
 
  h2{
-        font-family: 'Inter', sans-serif;
+        font-family: 'HelveticaNowText-bold', sans-serif;
+        font-weight: 700;
         font-size: 4rem;
     }
 
