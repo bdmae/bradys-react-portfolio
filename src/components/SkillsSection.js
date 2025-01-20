@@ -2,12 +2,6 @@ import React from 'react';
 
 import computer from '../img/computer.png';
 
-//icons
-import past from '../img/past.png';
-import skills from '../img/skills.png';
-import coffee from '../img/coffee.png';
-import bulb from '../img/bulb.png';
-
 
 //styles
 import styled from 'styled-components';
@@ -31,51 +25,41 @@ const SkillsSection = () => {
       ref={element}
     >
       <Description>
-        <h1>
-          The <span>who</span> and the <span>what</span>.
-        </h1>
         <Cards>
           <Card>
-            <div className="icon">
-              <img src={past} alt="my background" />
+            <div className="title-wrapper">
+              <i class="ph ph-house"></i>
               <h3>My background</h3>
             </div>
             <p>
-              {/* A girl from a small village in the UK. The smell of farms and
-              pastry makes me feel quite at home.
-              Fell in love with Joe Hisaishi's compositions at 12 years of age and
-              longed to experience Japan ever since. */}
               Began coding during the 2020 pandemic, and "If you can't stop
               thinking about it, don't stop working for it." so I left my life
-              in Osaka behind and graduated from LeWagon bootcamp, joined a
-              reputable tech start up where I met incredible people and gained
-              many new skills.
+              in Osaka behind and graduated from LeWagon bootcamp and the rest is history.
             </p>
           </Card>
           <Card>
-            <div className="icon">
-              <img src={skills} alt="my technical skills" />
+            <div className="title-wrapper">
+              <i class="ph ph-gear"></i>
               <h3>My Journey</h3>
             </div>
             <p>
-              On a professional level, I mainly work with JavaScript, React, PHP and SQL.
+              On a professional level, I mainly work with JavaScript, Vue.js (with TypeScript) and Ruby on Rails.
               I build most of my personal projects using React because I'm in love with the intuitivity and the way it encourages you a component-based mindset.
             </p>
           </Card>
           <Card>
-            <div className="icon">
-              <img src={coffee} alt="during my time off" />
+            <div className="title-wrapper">
+              <i class="ph ph-instagram-logo"></i>
               <h3>When I'm not coding..</h3>
             </div>
             <p>
-              My more productive hobbies include learning languages such as
-              Japanese & Korean. On the slightly less productive side... a
-              slight obsession with Kdrama and second hand shopping.
+              I run a photogrpahy instagram account. I particularly love capturing the different seasons in Japan.
+              Learning Korean as my hobby, one day I will watch squid game without subtitles!
             </p>
           </Card>
           <Card>
-            <div className="icon">
-              <img src={bulb} alt="my future goals" />
+            <div className="title-wrapper">
+              <i class="ph ph-lightbulb"></i>
               <h3>My goals</h3>
             </div>
             <p>
@@ -86,9 +70,6 @@ const SkillsSection = () => {
           </Card>
         </Cards>
       </Description>
-      <Image>
-        <img src={computer} alt="computer" />
-      </Image>
     </Skills>
   );
 };
@@ -107,7 +88,7 @@ const Skills = styled(About)`
   }
 
   p {
-    width: 80%;
+    width: 50%;
     padding: 2rem 0rem 4rem 0rem;
   }
 
@@ -117,8 +98,9 @@ const Skills = styled(About)`
 `;
 
 const Cards = styled.div`
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 `;
 
 const Image = styled.div`
@@ -131,12 +113,18 @@ const Card = styled.div`
   justify-content: center;
   align-items: center;
   flex-basis: 15rem;
-  .icon {
+  padding: 2rem;
+
+  .title-wrapper {
     display: flex;
     align-items: center;
     h3 {
       margin-left: 2px;
       padding: 1rem;
+    }
+
+    i {
+      font-size: 4rem;
     }
   }
 `;

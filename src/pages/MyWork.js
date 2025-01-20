@@ -2,15 +2,18 @@ import { useEffect, useRef } from "react";
 
 import nekojita from "../img/nekojita.png";
 import imeji from "../img/imeji.png";
+import tiedy from "../img/tiedy.png";
 import tofudovideo from "../videos/tofudovideo.mov";
 import evolanycorporate from "../img/evolanycorporate.png";
+import CMScatalogpage from "../img/CMScatalogpage.png";
+import designsystem from "../img/designsystem.png";
 
 // components
 import Tag from "../components/Tag";
 
 //style
 import styled from 'styled-components';
-import { Description, ColumnWrapper, RowWrapper, TagsWrapper } from '../styles';
+import { Description, ColumnWrapper, RowWrapper, TagsWrapper, ButtonWrapper } from '../styles';
 
 //links
 import {Link} from 'react-router-dom';
@@ -28,17 +31,72 @@ import ScrollTop from '../components/ScrollTop';
 import { faFolder } from "@fortawesome/free-regular-svg-icons";
 
 const MyWork = () => {
-
-
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
-      {/* <motion.div variants={sliderContainer}>
-        <Frame1 variants={slider}></Frame1>
-        <Frame2 variants={slider}></Frame2>
-        <Frame3 variants={slider}></Frame3>
-        <Frame4 variants={slider}></Frame4>
-      </motion.div> */}
-
+      <Project>
+        <motion.h2 variants={fade}>Ecommerce site CMS-Conversion</motion.h2>
+        <motion.h3 variants={fade}>Role: Frontend</motion.h3>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <RowWrapper>
+          <Description>
+            <TagsWrapper>
+              <Tag>JavaScript</Tag>
+              <Tag>Ruby on Rails</Tag>
+              <Tag>HTML (slim)</Tag>
+              <Tag>CSS/SCSS</Tag>
+              <Tag>Atomic Design</Tag>
+            </TagsWrapper>
+            <div class="details-wrapper">
+              <p>
+                Led the frontend initiative on a project to convert the product pages into CMS-compatible templates,
+                streamlining content updates and minimising manual coding dependencies.
+                Leveraged this opportunity to introduce better frontend practices based on Atomic Design principles
+                such as creating modular scalable atomic partials.
+              </p>
+            </div>
+            <ButtonWrapper>
+              <a href="https://www.sowxp.co.jp/catalogs/198" target="_blank" rel="noopener noreferrer">
+                <motion.button variants={fade}>
+                  see website
+                </motion.button>
+              </a>
+            </ButtonWrapper>
+          </Description>
+          <ResponsivePortraitImg
+            variants={photoAnim}
+            src={CMScatalogpage}
+            alt="catalog page"
+          />
+        </RowWrapper>
+      </Project>
+      <Project>
+        <motion.h2 variants={fade}>Figma (Atomic) Design System</motion.h2>
+        <motion.h3 variants={fade}>Role: Co-lead</motion.h3>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <RowWrapper>
+          <ResponsivePortraitImg
+            variants={photoAnim}
+            src={designsystem}
+            alt="Figma design system"
+          />
+          <Description>
+            <TagsWrapper>
+              <Tag>Figma</Tag>
+              <Tag>UI / UX Design</Tag>
+              <Tag>Tailwind</Tag>
+              <Tag>Ruby</Tag>
+              <Tag>Collaboration</Tag>
+            </TagsWrapper>
+            <div class="details-wrapper">
+              <p>
+                I built a scalable Figma Design system, from a creating reusable component library to documentation
+                - initially for our new mobile-reponsive client site, which has since been adopted across other areas such the Ecommerce site. 
+                Bridging the gap between design and development by hosting monthly meetings on optimising the design system and design handoffs to the development team.
+              </p>
+            </div>
+          </Description>
+        </RowWrapper>
+      </Project>
       <Project>
         <motion.h2 variants={fade}>Corporate Website</motion.h2>
         <motion.h3 variants={fade}>Role: Lead Developer</motion.h3>
@@ -53,73 +111,110 @@ const MyWork = () => {
             <TagsWrapper>
               <Tag>JavaScript</Tag>
               <Tag>HTML</Tag>
-              <Tag>SCSS3</Tag>
+              <Tag>CSS/SCSS</Tag>
               <Tag>PHP</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
                 Collaborated closely with the lead designer to spearhead the frontend development of the company’s 
-                corporate website, significantly enhancing the company’s branding, visibility and ultimately helping to attract 40% of its top talent.
+                corporate website, significantly enhancing the company’s branding, 
+                visibility and ultimately helping to attract 30% of its top talent.
               </p>
             </div>
-            <div class="button-wrapper">
-              <a href="https://evolany.com/">
-                <motion.button variants={fade}>let's connect!</motion.button>
+            <ButtonWrapper>
+              <a href="https://evolany.com/" target="_blank" rel="noopener noreferrer">
+                <motion.button variants={fade}>
+                  see website
+                </motion.button>
               </a>
-            </div>
+            </ButtonWrapper>
           </Description>
         </RowWrapper>
       </Project>
-
-      {/* <Project>
-        <motion.h2 variants={fade}>imeji</motion.h2>
-        <motion.h3 variants={fade}>Image gallery</motion.h3>
+      <Project>
+        <motion.h2 variants={fade}>Meeting Contacts Manager App</motion.h2>
+        <motion.h3 variants={fade}>Role: Frontend</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
+          <Description>
+            <TagsWrapper>
+              <Tag>React</Tag>
+              <Tag>Rest Apis</Tag>
+              <Tag>Collaboration</Tag>
+            </TagsWrapper>
+            <div class="details-wrapper">
+              <p>
+                Developed a responsive, user-friendly interface for Tiedy,
+                a web application acting as a virtual business card manager for online meetings.
+                I implemented seamless UI and UX for key user journies, 
+                including creating new rooms and the authentification flow via meeting invite.
+              </p>
+            </div>
+            <ButtonWrapper>
+              <a href="https://chromewebstore.google.com/detail/tiedy/phijiocdmmhgaajomdgffmpceehgdiji" target="_blank" rel="noopener noreferrer">
+                <motion.button variants={fade}>
+                  see chrome extension
+                </motion.button>
+              </a>
+            </ButtonWrapper>
+          </Description>
+          <ResponsiveImg
+            variants={photoAnim}
+            src={tiedy}
+            alt="screenshot of Tiedy contact manager page"
+          />
+        </RowWrapper>
+      </Project>
+      <Project>
+        <motion.h2 variants={fade}>imeji</motion.h2>
+        <motion.h3 variants={fade}>Project for fun</motion.h3>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <RowWrapper>
+          <Description>
+            <TagsWrapper>
+              <Tag>JavaScript</Tag>
+              <Tag>HTML</Tag>
+              <Tag>CSS</Tag>
+            </TagsWrapper>
+            <ButtonWrapper>
+              <p>
+                With my love for photography, I created a simple image gallery using the{" "}
+                <a href="https://www.pexels.com/api/">pexels api</a> to be able to
+                search any image for inspiration.
+              </p>
+            </ButtonWrapper>
+          </Description>
             <ResponsiveImg
               variants={photoAnim}
               src={imeji}
               alt="Imeji image gallery"
             />
-          <Description>
-            <TagsWrapper>
-              <Tag>JavaScript</Tag>
-              <Tag>HTML</Tag>
-              <Tag>SCSS3</Tag>
-              <Tag>PHP</Tag>
-            </TagsWrapper>
-            <p>
-              An Image gallery concept built in JS, using{" "}
-              <a href="https://www.pexels.com/api/">pexels api</a> to be able to
-              search any image.
-            </p>
-          </Description>
         </RowWrapper>
-      </Project> */}
+      </Project>
       <Project>
-        <motion.h2 variants={fade}>nekojita Blog Website</motion.h2>
-        <motion.h3 variants={fade}>Personal project</motion.h3>
+        <motion.h2 variants={fade}>Nekojita Blog Website</motion.h2>
+        <motion.h3 variants={fade}>Project for fun</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
-            <ResponsiveImg
-              variants={photoAnim}
-              src={nekojita}
-              alt="Nekojita blog site landing page"
-            />
-          <Description>
+          <ResponsiveImg
+            variants={photoAnim}
+            src={nekojita}
+            alt="Nekojita blog site landing page"
+          />
+           <Description>
             <TagsWrapper>
               <Tag>JavaScript</Tag>
               <Tag>Framer Motion</Tag>
             </TagsWrapper>
             <p>
-              A creative Blog webaite concept project, bringing
+              A creative Blog website concept project, bringing
               them to life through JS and Framer Motion animation. Developing it
               into a real platform where I can share my stories and experiences in
               Japan.
             </p>
             <div class="button-wrapper">
-              <a href="https://nekojita.netlify.app/">
-                <motion.button variants={fade}>let's connect!</motion.button>
+              <a href="https://nekojita.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <motion.button variants={fade}>website</motion.button>
               </a>
             </div>
           </Description>
@@ -127,9 +222,18 @@ const MyWork = () => {
       </Project>
       <Project>
         <motion.h2 variants={fade}>tofudo</motion.h2>
-        <motion.h3 variants={fade}>Todo list manager</motion.h3>
+        <motion.h3 variants={fade}>Project for fun</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
+          <Description>
+            <TagsWrapper>
+              <Tag>React</Tag>
+            </TagsWrapper>
+            <p>
+              A minimalist todo list with CRUD functionality and fetching from a
+              weather api, built in React JS.
+            </p>
+          </Description>
           <video
             src={tofudovideo}
             controls
@@ -142,12 +246,6 @@ const MyWork = () => {
             {" "}
             Tofudo video not able to load.
           </video>
-          <Description>
-            <p>
-              A minimalist todo list with CRUD functionality and fetching from a
-              weather api, built in React JS.
-            </p>
-          </Description>
         </RowWrapper>
       </Project>
       <ScrollTop />
@@ -164,17 +262,18 @@ const Work = styled(motion.div)`
     padding: 1rem 0rem;
     font-weight: 700;
   }
+
+  @media (max-width: 1100px) {
+    margin: 2rem;
+  }
 `;
 
 const Project = styled(motion.div)`
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   .line {
     height: 0.1rem;
     background: #23d997;
     margin-bottom: 3rem;
-  }
-  img {
-    padding: 1rem;
   }
 
   h3 {
@@ -186,17 +285,6 @@ const Project = styled(motion.div)`
   }
 `;
 
-// frame animation
-const Frame1 = styled(motion.div)`
-   position: fixed;
-   left: 0;
-   top: 10%;
-   width: 100%;
-   height: 100vh;
-   background: #fffebf;
-   z-index: 2;
-`;
-
 const ResponsiveImg = styled(motion.img)`
   width: 50%;
 
@@ -205,18 +293,13 @@ const ResponsiveImg = styled(motion.img)`
   }
 `;
 
-const Frame2 = styled(Frame1)`
-   background: #ff8efb;
+const ResponsivePortraitImg = styled(motion.img)`
+  width: 28%;
 
-   `;
-
-const Frame3 = styled(Frame1)`
-   background: #8ed2ff;
-   `;
-
-   const Frame4 = styled(Frame1)`
-   background: #8effa0;
-   `;
+  @media (max-width: 786px) {
+    width: 100%;
+  }
+`;
 
 
 export default MyWork;

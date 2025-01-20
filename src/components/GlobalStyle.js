@@ -59,7 +59,8 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.5;
     background-color: rgba(196, 187, 187, 0.25);
     padding: 1rem 2rem;
-    display: inline-block;
+    display: flex;
+    gap: 1rem;
     border-radius: 10px;
     font-weight: bold;
     font-family: inherit;
@@ -71,6 +72,10 @@ const GlobalStyle = createGlobalStyle`
     vertical-align: middle;
     transition: color 0.3s ease;
     font-family: 'Inter', sans-serif;
+
+    @media (max-width: 1100px) {
+      padding: 0.8rem 1rem;
+    }
 }
 
 button::before{
@@ -80,7 +85,7 @@ button::before{
     top: 0;
     height: 100%;
     width:0%;
-    background-color: #23d997;
+    background-color: #6ee7b7;
     z-index: -1;
     transition: width 0.3s ease;
 }
@@ -92,6 +97,10 @@ button:hover{
     color: white;
 }
 
+a {
+  text-decoration: none;
+}
+
 
 h1 {
   font-weight: lighter;
@@ -101,7 +110,7 @@ h1 {
  h2{
         font-family: 'HelveticaNowText-bold', sans-serif;
         font-weight: 700;
-        font-size: 4rem;
+        font-size: 8vmin;
     }
 
     p {

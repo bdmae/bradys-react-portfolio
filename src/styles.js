@@ -40,10 +40,6 @@ export const Image = styled.div`
   @media (max-width: 1100px) {
     margin-left: unset;
     justify-content: center;
-
-    img {
-      width: 40%;
-    }
   }
 
 `;
@@ -57,7 +53,7 @@ export const Description = styled.div`
   }
   @media (max-width: 1100px) {
     button {
-      margin: 2rem 0rem 5rem 0rem;
+      margin: 1rem;
     }
   }
 `;
@@ -69,8 +65,18 @@ export const Hide = styled.div`
 export const TagsWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.8rem;
 `;
+
+export const ButtonWrapper = styled.div`
+  display: flex;
+  
+  @media (max-width: 1100px) {
+    justify-content: center;
+  }
+`;
+
 
 export const RowWrapper = styled.div`
   display: flex;

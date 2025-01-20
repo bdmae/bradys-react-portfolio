@@ -3,7 +3,7 @@ import brady from '../img/me.svg';
 
 //styled
 
-import { About, Description, Image, Hide } from "../styles";
+import { About, Description, Image, Hide, ButtonWrapper } from "../styles";
 //Framer Motion
 import { motion } from 'framer-motion';
 import { fade } from "../animation";
@@ -48,12 +48,13 @@ const AboutSection = () => {
             </motion.h2>
           </Hide>
           <motion.p variants={titleAnim}>
-            My aim is to join the beautiful, messy world of design and front-end
-            development.
+              I’m dedicated to creating digital experiences that are as delightful to use as they are to look at.
           </motion.p>
-          <a href="https://www.linkedin.com/in/brady-dornan1996/">
-            <motion.button variants={fade}>let's connect!</motion.button>
-          </a>
+          <ButtonWrapper>
+            <a href="https://www.linkedin.com/in/brady-dornan1996/">
+              <motion.button variants={fade}>let's connect!</motion.button>
+            </a>
+          </ButtonWrapper>
         </motion.div>
       </Description>
       {/* if you want to get an image out of the staggering elemnets,

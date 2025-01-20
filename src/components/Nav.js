@@ -9,7 +9,7 @@ const Nav = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1) {
+      if (window.scrollY > 5) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -32,10 +32,10 @@ const Nav = () => {
       <li className="hide-on-mobile">
         <Link to="/">who am I?</Link>
       </li>
-      <li className="hide-on-mobile">
+      <li className="projects">
         <Link to="/work">projects</Link>
       </li>
-        <li>
+        <li className="contact">
           <Link to="/contact">
             <i class="ph ph-envelope-simple"></i>
           </Link>
@@ -84,10 +84,11 @@ const StyledNav = styled.nav`
   ul {
     display: flex;
     list-style: none;
+    font-size: 1.2rem;
 
   }
   #logo {
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-family: "Lobster", cursive;
     font-weight: lighter;
   }
@@ -97,18 +98,23 @@ const StyledNav = styled.nav`
     position: relative;
   }
 
+  .contact {
+    font-size: 1.6rem;
+  }
+
   .hide-on-mobile {
     display: inline-block;
   }
 
   @media (max-width: 1100px) {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
     .hide-on-mobile {
       display: none;
     }
 
     ul li {
       display: block;
+      padding-left: 1rem;
     }
   }
 `;
