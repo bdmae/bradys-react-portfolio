@@ -93,10 +93,6 @@ button:hover::before{
     width: 100%;
 }
 
-button:hover{
-    color: white;
-}
-
 a {
   text-decoration: none;
 }

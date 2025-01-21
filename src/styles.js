@@ -40,6 +40,10 @@ export const Image = styled.div`
   @media (max-width: 1100px) {
     margin-left: unset;
     justify-content: center;
+
+    img {
+      width:100%;
+    }
   }
 
 `;
@@ -67,6 +71,7 @@ export const TagsWrapper = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   gap: 0.8rem;
+  padding: 1rem 0;
 `;
 
 export const ButtonWrapper = styled.div`
@@ -85,6 +90,7 @@ export const RowWrapper = styled.div`
 
   @media (max-width: 1100px) {
     flex-direction: column;
+    gap: unset;
   }
 `;
 

@@ -70,7 +70,7 @@ const MyWork = () => {
         </RowWrapper>
       </Project>
       <Project>
-        <motion.h2 variants={fade}>Figma (Atomic) Design System</motion.h2>
+        <motion.h2 variants={fade}>Atomic Design System</motion.h2>
         <motion.h3 variants={fade}>Role: Co-lead</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
@@ -83,14 +83,11 @@ const MyWork = () => {
             <TagsWrapper>
               <Tag>Figma</Tag>
               <Tag>UI / UX Design</Tag>
-              <Tag>Tailwind</Tag>
-              <Tag>Ruby</Tag>
               <Tag>Collaboration</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
-                I built a scalable Figma Design system, from a creating reusable component library to documentation
-                - initially for our new mobile-reponsive client site, which has since been adopted across other areas such the Ecommerce site. 
+                I built a scalable Figma Design system based on Atomic Design methodology, from a creating vast reusable component library to writing documentation, which has since been adopted as a company wide design system. 
                 Bridging the gap between design and development by hosting monthly meetings on optimising the design system and design handoffs to the development team.
               </p>
             </div>
@@ -132,7 +129,7 @@ const MyWork = () => {
         </RowWrapper>
       </Project>
       <Project>
-        <motion.h2 variants={fade}>Meeting Contacts Manager App</motion.h2>
+        <motion.h2 variants={fade}>Meeting Contacts Manager</motion.h2>
         <motion.h3 variants={fade}>Role: Frontend</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
@@ -176,12 +173,17 @@ const MyWork = () => {
               <Tag>HTML</Tag>
               <Tag>CSS</Tag>
             </TagsWrapper>
+            <p>
+              With my love for photography, I created a simple image gallery using the{" "}
+              <a href="https://www.pexels.com/api/">pexels api</a> to be able to
+              search any image for inspiration.
+            </p>
             <ButtonWrapper>
-              <p>
-                With my love for photography, I created a simple image gallery using the{" "}
-                <a href="https://www.pexels.com/api/">pexels api</a> to be able to
-                search any image for inspiration.
-              </p>
+              <a href="https://imeji.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <motion.button variants={fade}>
+                  see website
+                </motion.button>
+              </a>
             </ButtonWrapper>
           </Description>
             <ResponsiveImg
@@ -204,7 +206,7 @@ const MyWork = () => {
            <Description>
             <TagsWrapper>
               <Tag>JavaScript</Tag>
-              <Tag>Framer Motion</Tag>
+              <Tag>Scroll Magic</Tag>
             </TagsWrapper>
             <p>
               A creative Blog website concept project, bringing
@@ -212,11 +214,11 @@ const MyWork = () => {
               into a real platform where I can share my stories and experiences in
               Japan.
             </p>
-            <div class="button-wrapper">
+            <ButtonWrapper>
               <a href="https://nekojita.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <motion.button variants={fade}>website</motion.button>
+                <motion.button variants={fade}>see website</motion.button>
               </a>
-            </div>
+            </ButtonWrapper>
           </Description>
         </RowWrapper>
       </Project>

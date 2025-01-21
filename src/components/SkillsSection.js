@@ -5,11 +5,12 @@ import computer from '../img/computer.png';
 
 //styles
 import styled from 'styled-components';
-import { About, Description } from '../styles';
+import { About, Description, RowWrapper, TagsWrapper } from '../styles';
 
 //scroll anim
 import { scrollReveal } from "../animation";
 import { useScroll } from './useScroll';
+import Tag from './Tag';
 
 //the view is saying true when you scroll.
 // we can specify WHEN something is true, we can do that with threshold
@@ -33,29 +34,50 @@ const SkillsSection = () => {
             </div>
             <p>
               Began coding during the 2020 pandemic, and "If you can't stop
-              thinking about it, don't stop working for it." so I left my life
-              in Osaka behind and graduated from LeWagon bootcamp and the rest is history.
+              thinking about it, don't stop working for it." so I left my whole life
+              in Osaka behind, graduated from LeWagon bootcamp and the rest is history.
             </p>
           </Card>
           <Card>
             <div className="title-wrapper">
               <i class="ph ph-gear"></i>
-              <h3>My Journey</h3>
+              <h3>My Skills</h3>
             </div>
-            <p>
-              On a professional level, I mainly work with JavaScript, Vue.js (with TypeScript) and Ruby on Rails.
-              I build most of my personal projects using React because I'm in love with the intuitivity and the way it encourages you a component-based mindset.
-            </p>
-          </Card>
-          <Card>
-            <div className="title-wrapper">
-              <i class="ph ph-instagram-logo"></i>
-              <h3>When I'm not coding..</h3>
+            <div className="skills-wrapper">
+              <RowWrapper>
+                <div class="title-wrapper">
+                  <h3>Frontend</h3>
+                </div>
+                <TagsWrapper>
+                  <Tag>HTML</Tag>
+                  <Tag>CSS</Tag>
+                  <Tag>JavaScript</Tag>
+                  <Tag>Typescript</Tag>
+                  <Tag>React</Tag>
+                  <Tag>Vue</Tag>
+                  <Tag>Tailwind</Tag>
+                  <Tag>Styled Components</Tag>
+                </TagsWrapper>
+              </RowWrapper>
+              <RowWrapper>
+                <div class="title-wrapper">
+                  <h3>Backend</h3>
+                </div>
+                <TagsWrapper>
+                  <Tag>Ruby on Rails</Tag>
+                  <Tag>PHP</Tag>
+                </TagsWrapper>
+              </RowWrapper>
+              <RowWrapper>
+                <div class="title-wrapper">
+                  <h3>Other</h3>
+                </div>
+                <TagsWrapper>
+                  <Tag>GitHub</Tag>
+                  <Tag>Git</Tag>
+                </TagsWrapper>
+              </RowWrapper>
             </div>
-            <p>
-              I run a photogrpahy instagram account. I particularly love capturing the different seasons in Japan.
-              Learning Korean as my hobby, one day I will watch squid game without subtitles!
-            </p>
           </Card>
           <Card>
             <div className="title-wrapper">
@@ -66,6 +88,16 @@ const SkillsSection = () => {
               To contribute even further to a world of beautiful, intuitively
               designed pages with the help of JS frameworks such as React. To be
               able to create any inspiring design and to bring it to life.
+            </p>
+          </Card>
+          <Card>
+            <div className="title-wrapper">
+              <i class="ph ph-instagram-logo"></i>
+              <h3>When I'm not coding..</h3>
+            </div>
+            <p>
+              I run a <a href="https://www.instagram.com/suika.snap?igsh=NXpjcXYxN3UzY2Rn&utm_source=qr" target="_blank" rel="noopener noreferrer">photography instagram account</a> that shows my love for capturing the different seasons in Japan.
+              Learning Korean as my hobby, one day I will watch squid game without subtitles!
             </p>
           </Card>
         </Cards>
@@ -90,6 +122,10 @@ const Skills = styled(About)`
   p {
     width: 50%;
     padding: 2rem 0rem 4rem 0rem;
+
+    @media (max-width: 1100px) {
+      width: 100%;
+    }
   }
 
   img {
@@ -121,6 +157,10 @@ const Card = styled.div`
     h3 {
       margin-left: 2px;
       padding: 1rem;
+
+      @media (max-width: 1100px) {
+        padding: 0.4rem;
+      }
     }
 
     i {
