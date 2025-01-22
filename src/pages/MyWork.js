@@ -1,5 +1,3 @@
-import { useEffect, useRef } from "react";
-
 import nekojita from "../img/nekojita.png";
 import imeji from "../img/imeji.png";
 import tiedy from "../img/tiedy.png";
@@ -13,10 +11,9 @@ import Tag from "../components/Tag";
 
 //style
 import styled from 'styled-components';
-import { Description, ColumnWrapper, RowWrapper, TagsWrapper, ButtonWrapper } from '../styles';
+import { Description, RowWrapper, TagsWrapper, ButtonWrapper } from '../styles';
 
 //links
-import {Link} from 'react-router-dom';
 
 //animations
 import { motion } from 'framer-motion';
@@ -26,9 +23,7 @@ import {
   lineAnim,
   pageAnimation
 } from "../animation";
-import {useScroll} from '../components/useScroll';
 import ScrollTop from '../components/ScrollTop';
-import { faFolder } from "@fortawesome/free-regular-svg-icons";
 
 const MyWork = () => {
   return (

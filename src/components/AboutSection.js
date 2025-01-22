@@ -7,7 +7,7 @@ import { About, Description, Image, Hide, ButtonWrapper } from "../styles";
 //Framer Motion
 import { motion } from 'framer-motion';
 import { fade } from "../animation";
-import { photoAnim, descAnim } from "../animation";
+import { photoAnim } from "../animation";
 import Wave from "./Wave";
 //if we want to target an element to make an animation,
 // we simply put "motion." in the tag

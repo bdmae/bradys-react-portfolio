@@ -1,8 +1,5 @@
 import React from 'react';
 
-import computer from '../img/computer.png';
-
-
 //styles
 import styled from 'styled-components';
 import { About, Description, RowWrapper, TagsWrapper } from '../styles';
@@ -136,10 +133,6 @@ const Skills = styled(About)`
 const Cards = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-`;
-
-const Image = styled.div`
   width: 100%;
 `;
 

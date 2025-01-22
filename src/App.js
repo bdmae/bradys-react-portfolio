@@ -27,7 +27,6 @@ import { Routes, Route, useLocation } from "react-router-dom";
 
 //to let the app know when the components have been mounted
 import { AnimatePresence } from 'framer-motion';
-import { useEffect } from 'react';
 
 function App() {
   const location = useLocation();
