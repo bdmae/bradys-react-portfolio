@@ -66,6 +66,11 @@ const MyWork = () => {
         <motion.h3 variants={fade}>Role: Co-lead</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
+          <ResponsivePortraitImg
+            variants={photoAnim}
+            src={designsystem}
+            alt="Figma design system"
+          />
           <Description>
             <TagsWrapper>
               <Tag>Figma</Tag>
@@ -79,11 +84,6 @@ const MyWork = () => {
               </p>
             </div>
           </Description>
-          <ResponsivePortraitImg
-            variants={photoAnim}
-            src={designsystem}
-            alt="Figma design system"
-          />
         </RowWrapper>
       </Project>
       <Project>
@@ -126,6 +126,11 @@ const MyWork = () => {
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
           <Description>
+            <ResponsiveImg
+              variants={photoAnim}
+              src={tiedy}
+              alt="screenshot of Tiedy contact manager page"
+            />
             <TagsWrapper>
               <Tag>React</Tag>
               <Tag>Rest Apis</Tag>
@@ -147,11 +152,6 @@ const MyWork = () => {
               </a>
             </ButtonWrapper>
           </Description>
-          <ResponsiveImg
-            variants={photoAnim}
-            src={tiedy}
-            alt="screenshot of Tiedy contact manager page"
-          />
         </RowWrapper>
       </Project>
       <Project>
@@ -190,6 +190,11 @@ const MyWork = () => {
         <motion.h3 variants={fade}>Project for fun</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
+          <ResponsiveImg
+            variants={photoAnim}
+            src={nekojita}
+            alt="Nekojita blog site landing page"
+          />
           <Description>
             <TagsWrapper>
               <Tag>JavaScript</Tag>
@@ -208,11 +213,6 @@ const MyWork = () => {
               </a>
             </ButtonWrapper>
           </Description>
-          <ResponsiveImg
-            variants={photoAnim}
-            src={nekojita}
-            alt="Nekojita blog site landing page"
-          />
         </RowWrapper>
       </Project>
       {/* <Project>
