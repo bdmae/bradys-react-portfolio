@@ -26,6 +26,52 @@ const SkillsSection = () => {
         <Cards>
           <Card>
             <div className="title-wrapper">
+              <i class="ph ph-gear"></i>
+              <h3>My Skills</h3>
+            </div>
+            <div className="skills-wrapper">
+              <RowWrapper class="frontend">
+                <div class="subtitle-wrapper">
+                  <h3>Frontend</h3>
+                </div>
+                <TagsWrapper>
+                  <Tag>HTML</Tag>
+                  <Tag>CSS/SCSS</Tag>
+                  <Tag>JavaScript</Tag>
+                  <Tag>Typescript</Tag>
+                  <Tag>React</Tag>
+                  <Tag>Vue</Tag>
+                  <Tag>Tailwind</Tag>
+                  <Tag>Styled Components</Tag>
+                </TagsWrapper>
+              </RowWrapper>
+              <RowWrapper class="backend">
+                <div class="subtitle-wrapper">
+                  <h3>Backend</h3>
+                </div>
+                <TagsWrapper>
+                  <Tag>Ruby on Rails</Tag>
+                  <Tag>PHP</Tag>
+                </TagsWrapper>
+              </RowWrapper>
+              <RowWrapper class="other">
+                <div class="subtitle-wrapper">
+                  <h3>Other</h3>
+                </div>
+                <TagsWrapper>
+                  <Tag>GitHub</Tag>
+                  <Tag>Git</Tag>
+                  <Tag>AWS</Tag>
+                  <Tag>CircleCI</Tag>
+                  <Tag>Rspec</Tag>
+                  <Tag>Cucumber-Gherkin</Tag>
+                  <Tag>Figma</Tag>
+                </TagsWrapper>
+              </RowWrapper>
+            </div>
+          </Card>
+          <Card>
+            <div className="title-wrapper">
               <i class="ph ph-house"></i>
               <h3>My background</h3>
             </div>
@@ -37,60 +83,18 @@ const SkillsSection = () => {
           </Card>
           <Card>
             <div className="title-wrapper">
-              <i class="ph ph-gear"></i>
-              <h3>My Skills</h3>
-            </div>
-            <div className="skills-wrapper">
-              <RowWrapper>
-                <div class="title-wrapper">
-                  <h3>Frontend</h3>
-                </div>
-                <TagsWrapper>
-                  <Tag>HTML</Tag>
-                  <Tag>CSS</Tag>
-                  <Tag>JavaScript</Tag>
-                  <Tag>Typescript</Tag>
-                  <Tag>React</Tag>
-                  <Tag>Vue</Tag>
-                  <Tag>Tailwind</Tag>
-                  <Tag>Styled Components</Tag>
-                </TagsWrapper>
-              </RowWrapper>
-              <RowWrapper>
-                <div class="title-wrapper">
-                  <h3>Backend</h3>
-                </div>
-                <TagsWrapper>
-                  <Tag>Ruby on Rails</Tag>
-                  <Tag>PHP</Tag>
-                </TagsWrapper>
-              </RowWrapper>
-              <RowWrapper>
-                <div class="title-wrapper">
-                  <h3>Other</h3>
-                </div>
-                <TagsWrapper>
-                  <Tag>GitHub</Tag>
-                  <Tag>Git</Tag>
-                </TagsWrapper>
-              </RowWrapper>
-            </div>
-          </Card>
-          <Card>
-            <div className="title-wrapper">
               <i class="ph ph-lightbulb"></i>
               <h3>My goals</h3>
             </div>
             <p>
-              To contribute even further to a world of beautiful, intuitively
-              designed pages with the help of JS frameworks such as React. To be
-              able to create any inspiring design and to bring it to life.
+              Proven track record of being able to bring any inspiring design to life whilst prioritising user experience.
+              Aim to leverage my skills to contribute to more meaningful projects and to continue learning and growing as a developer.
             </p>
           </Card>
           <Card>
             <div className="title-wrapper">
               <i class="ph ph-instagram-logo"></i>
-              <h3>When I'm not coding..</h3>
+              <h3 class="">When I'm not coding..</h3>
             </div>
             <p>
               I run a <a href="https://www.instagram.com/suika.snap?igsh=NXpjcXYxN3UzY2Rn&utm_source=qr" target="_blank" rel="noopener noreferrer">photography instagram account</a> that shows my love for capturing the different seasons in Japan.
@@ -158,6 +162,13 @@ const Card = styled.div`
 
     i {
       font-size: 4rem;
+    }
+  }
+
+  .subtitle-wrapper {
+    width: 6rem;
+    h3 {
+      padding: 1rem;
     }
   }
 `;

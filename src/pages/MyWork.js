@@ -1,7 +1,7 @@
 import nekojita from "../img/nekojita.png";
 import imeji from "../img/imeji.png";
 import tiedy from "../img/tiedy.png";
-import tofudovideo from "../videos/tofudovideo.mov";
+// import tofudovideo from "../videos/tofudovideo.mov";
 import evolanycorporate from "../img/evolanycorporate.png";
 import CMScatalogpage from "../img/CMScatalogpage.png";
 import designsystem from "../img/designsystem.png";
@@ -33,20 +33,22 @@ const MyWork = () => {
         <motion.h3 variants={fade}>Role: Frontend</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
+          <ResponsivePortraitImg
+            variants={photoAnim}
+            src={CMScatalogpage}
+            alt="catalog page"
+          />
           <Description>
             <TagsWrapper>
               <Tag>JavaScript</Tag>
               <Tag>Ruby on Rails</Tag>
               <Tag>HTML (slim)</Tag>
               <Tag>CSS/SCSS</Tag>
-              <Tag>Atomic Design</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
-                Led the frontend initiative on a project to convert the product pages into CMS-compatible templates,
-                streamlining content updates and minimising manual coding dependencies.
-                Leveraged this opportunity to introduce better frontend practices based on Atomic Design principles
-                such as creating modular scalable atomic partials.
+              Led the frontend initiative to transform product pages into CMS-compatible templates, enabling seamless content updates by non-technical teams. 
+              This shift reduced update times from around a day to just 1-2 hours, empowering teams to make changes independently and efficiently.
               </p>
             </div>
             <ButtonWrapper>
@@ -57,11 +59,6 @@ const MyWork = () => {
               </a>
             </ButtonWrapper>
           </Description>
-          <ResponsivePortraitImg
-            variants={photoAnim}
-            src={CMScatalogpage}
-            alt="catalog page"
-          />
         </RowWrapper>
       </Project>
       <Project>
@@ -69,11 +66,6 @@ const MyWork = () => {
         <motion.h3 variants={fade}>Role: Co-lead</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
-          <ResponsivePortraitImg
-            variants={photoAnim}
-            src={designsystem}
-            alt="Figma design system"
-          />
           <Description>
             <TagsWrapper>
               <Tag>Figma</Tag>
@@ -87,6 +79,11 @@ const MyWork = () => {
               </p>
             </div>
           </Description>
+          <ResponsivePortraitImg
+            variants={photoAnim}
+            src={designsystem}
+            alt="Figma design system"
+          />
         </RowWrapper>
       </Project>
       <Project>
@@ -162,6 +159,11 @@ const MyWork = () => {
         <motion.h3 variants={fade}>Project for fun</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
+            <ResponsiveImg
+              variants={photoAnim}
+              src={imeji}
+              alt="Imeji image gallery"
+            />
           <Description>
             <TagsWrapper>
               <Tag>JavaScript</Tag>
@@ -181,11 +183,6 @@ const MyWork = () => {
               </a>
             </ButtonWrapper>
           </Description>
-            <ResponsiveImg
-              variants={photoAnim}
-              src={imeji}
-              alt="Imeji image gallery"
-            />
         </RowWrapper>
       </Project>
       <Project>
@@ -193,15 +190,11 @@ const MyWork = () => {
         <motion.h3 variants={fade}>Project for fun</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
-          <ResponsiveImg
-            variants={photoAnim}
-            src={nekojita}
-            alt="Nekojita blog site landing page"
-          />
-           <Description>
+          <Description>
             <TagsWrapper>
               <Tag>JavaScript</Tag>
               <Tag>Scroll Magic</Tag>
+              <Tag>UI/UX Design</Tag>
             </TagsWrapper>
             <p>
               A creative Blog website concept project, bringing
@@ -215,9 +208,14 @@ const MyWork = () => {
               </a>
             </ButtonWrapper>
           </Description>
+          <ResponsiveImg
+            variants={photoAnim}
+            src={nekojita}
+            alt="Nekojita blog site landing page"
+          />
         </RowWrapper>
       </Project>
-      <Project>
+      {/* <Project>
         <motion.h2 variants={fade}>tofudo</motion.h2>
         <motion.h3 variants={fade}>Project for fun</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
@@ -244,7 +242,7 @@ const MyWork = () => {
             Tofudo video not able to load.
           </video>
         </RowWrapper>
-      </Project>
+      </Project> */}
       <ScrollTop />
     </Work>
   );
@@ -284,6 +282,8 @@ const Project = styled(motion.div)`
 
 const ResponsiveImg = styled(motion.img)`
   width: 50%;
+  object-fit: cover;
+  border-radius: 0.8rem;
 
   @media (max-width: 1100px) {
     width: 100%;
@@ -292,6 +292,8 @@ const ResponsiveImg = styled(motion.img)`
 
 const ResponsivePortraitImg = styled(motion.img)`
   width: 28%;
+  object-fit: cover;
+  border-radius: 0.6rem;
 
   @media (max-width: 786px) {
     width: 100%;
