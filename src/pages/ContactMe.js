@@ -27,7 +27,7 @@ const ContactMe = () => {
             <Social variants={titleAnim} className="social">
               <Circle></Circle>
               <a href="mailto:bradydornan@gmail.com">
-                <h3>Email</h3>
+                <p>Email</p>
               </a>
             </Social>
           </Hide>
@@ -35,18 +35,18 @@ const ContactMe = () => {
             <Social variants={titleAnim} className="social">
               <Circle></Circle>
               <a href="https://www.linkedin.com/in/brady-dornan1996/">
-                <h3>LinkedIn</h3>
+                <p>LinkedIn</p>
               </a>
             </Social>
           </Hide>
-          <Hide>
+          {/* <Hide>
             <Social variants={titleAnim} className="social">
               <Circle></Circle>
               <a href="https://www.wantedly.com/id/bradymae">
                 <h3>Wantedly</h3>
               </a>
             </Social>
-          </Hide>
+          </Hide> */}
         </SocialsLinks>
         <Hide>
           <div className="img-wrapper">
@@ -117,14 +117,21 @@ const Image = styled.div`
 
 const Circle = styled.div`
    border-radius: 50%;
-   width: 3rem;
-   height: 3rem;
+   width: 2.6rem;
+   height: 2.6rem;
    background: #353535;
+
+   @media (max-width: 1100px) {
+     width: 1.8rem;
+     height: 1.8rem;
+   }
 `;
 
 const Social = styled(motion.div)`
   display: flex;
   align-items: center;
+  gap: 1rem;
+  height: 2.4rem;
   h2 {
     margin: 2rem
   }
