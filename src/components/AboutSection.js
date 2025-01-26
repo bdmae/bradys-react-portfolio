@@ -57,8 +57,6 @@ const AboutSection = () => {
           </ButtonWrapper>
         </motion.div>
       </Description>
-      {/* if you want to get an image out of the staggering elemnets,
-          you can define an initial and a show */}
       <Image>
         <motion.img
           variants={photoAnim}

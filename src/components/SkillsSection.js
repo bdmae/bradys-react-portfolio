@@ -76,9 +76,9 @@ const SkillsSection = () => {
               <h3>My background</h3>
             </div>
             <p>
-              Began coding during the 2020 pandemic, and "If you can't stop
-              thinking about it, don't stop working for it." so I left my whole life
-              in Osaka behind, graduated from LeWagon bootcamp and the rest is history.
+              Began coding during the 2020 pandemic since I had the gift of time given to me on a plate. "If you can't stop
+              thinking about it, don't stop working for it." - is a quote I live by, so I left my whole life
+              in Osaka behind, moved to Tokyo, graduated from LeWagon bootcamp and the rest is history.
             </p>
           </Card>
           <Card>

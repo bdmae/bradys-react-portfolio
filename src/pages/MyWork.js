@@ -107,7 +107,7 @@ const MyWork = () => {
               <p>
                 Collaborated closely with the lead designer to spearhead the frontend development of the company’s 
                 corporate website, significantly enhancing the company’s branding, 
-                visibility and ultimately helping to attract 30% of its top talent.
+                visibility and ultimately helping to attract 40% of its talent.
               </p>
             </div>
             <ButtonWrapper>
@@ -155,7 +155,7 @@ const MyWork = () => {
         </RowWrapper>
       </Project>
       <Project>
-        <motion.h2 variants={fade}>imeji</motion.h2>
+        <motion.h2 variants={fade}>Imeji Photo Gallery</motion.h2>
         <motion.h3 variants={fade}>Project for fun</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
