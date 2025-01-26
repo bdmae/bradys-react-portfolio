@@ -185,7 +185,7 @@ const MyWork = () => {
           </Description>
         </RowWrapper>
       </Project>
-      <Project>
+      {/* <Project>
         <motion.h2 variants={fade}>Nekojita Blog Website</motion.h2>
         <motion.h3 variants={fade}>Project for fun</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
@@ -214,7 +214,7 @@ const MyWork = () => {
             </ButtonWrapper>
           </Description>
         </RowWrapper>
-      </Project>
+      </Project> */}
       {/* <Project>
         <motion.h2 variants={fade}>tofudo</motion.h2>
         <motion.h3 variants={fade}>Project for fun</motion.h3>
