@@ -16,52 +16,54 @@ const ContactMe = () => {
       initial="hidden"
       animate="show"
     >
-      <Title>
-        <Hide>
-          <motion.h2 variants={titleAnim}>Drop me a message!</motion.h2>
-        </Hide>
-      </Title>
-      <SocialsWrappers>
-        <SocialsLinks>
+      <ContactMeWrapper class="main-container">
+        <Title>
           <Hide>
-            <Social variants={titleAnim} className="social">
-              <Circle></Circle>
-              <a href="mailto:bradydornan@gmail.com">
-                <p>Email</p>
-              </a>
-            </Social>
+            <motion.h2 variants={titleAnim}>Drop me a message!</motion.h2>
           </Hide>
+        </Title>
+        <SocialsWrappers>
+          <SocialsLinks>
+            <Hide>
+              <Social variants={titleAnim} className="social">
+                <Circle></Circle>
+                <a href="mailto:bradydornan@gmail.com">
+                  <p>Email</p>
+                </a>
+              </Social>
+            </Hide>
+            <Hide>
+              <Social variants={titleAnim} className="social">
+                <Circle></Circle>
+                <a href="https://www.linkedin.com/in/brady-dornan1996/">
+                  <p>LinkedIn</p>
+                </a>
+              </Social>
+            </Hide>
+            {/* <Hide>
+              <Social variants={titleAnim} className="social">
+                <Circle></Circle>
+                <a href="https://www.wantedly.com/id/bradymae">
+                  <h3>Wantedly</h3>
+                </a>
+              </Social>
+            </Hide> */}
+          </SocialsLinks>
           <Hide>
-            <Social variants={titleAnim} className="social">
-              <Circle></Circle>
-              <a href="https://www.linkedin.com/in/brady-dornan1996/">
-                <p>LinkedIn</p>
-              </a>
-            </Social>
+            <div className="img-wrapper">
+              <Image>
+                <motion.img
+                  variants={contactPhotoAnim}
+                  initial="hidden"
+                  animate="show"
+                  src={pointingbrady}
+                  alt="myself"
+                />
+              </Image>
+            </div>
           </Hide>
-          {/* <Hide>
-            <Social variants={titleAnim} className="social">
-              <Circle></Circle>
-              <a href="https://www.wantedly.com/id/bradymae">
-                <h3>Wantedly</h3>
-              </a>
-            </Social>
-          </Hide> */}
-        </SocialsLinks>
-        <Hide>
-          <div className="img-wrapper">
-            <Image>
-              <motion.img
-                variants={contactPhotoAnim}
-                initial="hidden"
-                animate="show"
-                src={pointingbrady}
-                alt="myself"
-              />
-            </Image>
-          </div>
-        </Hide>
-      </SocialsWrappers>
+        </SocialsWrappers>
+      </ContactMeWrapper>
     </ContactStyle>
   );
 };
@@ -76,6 +78,12 @@ const ContactStyle = styled(motion.div)`
    @media (max-width: 1000px) {
     padding: 1.4rem;
   }
+`;
+
+const ContactMeWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const Title = styled.div`
