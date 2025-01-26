@@ -72,14 +72,26 @@ export const TagsWrapper = styled.div`
   flex-wrap: wrap;
   gap: 0.8rem;
   padding: 1rem 0;
+
+  ${({ isLandingPage }) =>
+    isLandingPage &&
+    `
+    @media (max-width: 1100px) {
+      justify-content: center;
+    }
+  `}
 `;
 
 export const ButtonWrapper = styled.div`
   display: flex;
-  
-  @media (max-width: 1100px) {
-    justify-content: center;
-  }
+
+  ${({ isLandingPage }) =>
+    isLandingPage &&
+    `
+    @media (max-width: 1100px) {
+      justify-content: center;
+    }
+  `}
 `;
 
 

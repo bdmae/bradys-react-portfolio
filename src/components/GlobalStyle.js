@@ -106,7 +106,7 @@ h1 {
  h2{
         font-family: 'HelveticaNowText-bold', sans-serif;
         font-weight: 700;
-        font-size: 8vmin;
+        font-size: 6vmin;
     }
 
     p {

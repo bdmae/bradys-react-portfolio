@@ -50,7 +50,7 @@ const AboutSection = () => {
           <motion.p variants={titleAnim}>
               I’m dedicated to creating digital experiences that are as delightful to use as they are to look at.
           </motion.p>
-          <ButtonWrapper>
+          <ButtonWrapper isLandingPage={true}>
             <a href="https://www.linkedin.com/in/brady-dornan1996/">
               <motion.button variants={fade}>let's connect!</motion.button>
             </a>

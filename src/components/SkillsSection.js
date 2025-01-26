@@ -27,14 +27,14 @@ const SkillsSection = () => {
           <Card>
             <div className="title-wrapper">
               <i class="ph ph-gear"></i>
-              <h3>My Skills</h3>
+              <h3>Skills</h3>
             </div>
             <div className="skills-wrapper">
               <RowWrapper class="frontend">
                 <div class="subtitle-wrapper">
                   <h3>Frontend</h3>
                 </div>
-                <TagsWrapper>
+                <TagsWrapper isLandingPage={true}>
                   <Tag>HTML</Tag>
                   <Tag>CSS/SCSS</Tag>
                   <Tag>JavaScript</Tag>
@@ -49,7 +49,7 @@ const SkillsSection = () => {
                 <div class="subtitle-wrapper">
                   <h3>Backend</h3>
                 </div>
-                <TagsWrapper>
+                <TagsWrapper isLandingPage={true}>
                   <Tag>Ruby on Rails</Tag>
                   <Tag>PHP</Tag>
                 </TagsWrapper>
@@ -58,7 +58,7 @@ const SkillsSection = () => {
                 <div class="subtitle-wrapper">
                   <h3>Other</h3>
                 </div>
-                <TagsWrapper>
+                <TagsWrapper isLandingPage={true}>
                   <Tag>GitHub</Tag>
                   <Tag>Git</Tag>
                   <Tag>AWS</Tag>
@@ -73,7 +73,7 @@ const SkillsSection = () => {
           <Card>
             <div className="title-wrapper">
               <i class="ph ph-house"></i>
-              <h3>My background</h3>
+              <h3>Background</h3>
             </div>
             <p>
               Began coding during the 2020 pandemic since I had the gift of time given to me on a plate. "If you can't stop
@@ -84,7 +84,7 @@ const SkillsSection = () => {
           <Card>
             <div className="title-wrapper">
               <i class="ph ph-lightbulb"></i>
-              <h3>My goals</h3>
+              <h3>Goals</h3>
             </div>
             <p>
               Proven track record of being able to bring any inspiring design to life whilst prioritising user experience.
@@ -122,10 +122,12 @@ const Skills = styled(About)`
 
   p {
     width: 50%;
-    padding: 2rem 0rem 4rem 0rem;
+    padding: 2rem 0 4rem 0;
 
     @media (max-width: 1100px) {
       width: 100%;
+      padding: 1rem 0 2rem 0;
+      font-size: 1.2rem;
     }
   }
 
@@ -154,6 +156,7 @@ const Card = styled.div`
     h3 {
       margin-left: 2px;
       padding: 1rem;
+      font-size: 2rem;
 
       @media (max-width: 1100px) {
         padding: 0.4rem;
@@ -169,6 +172,10 @@ const Card = styled.div`
     width: 6rem;
     h3 {
       padding: 1rem;
+    }
+
+    @media (max-width: 1100px) {
+      width: 100%;
     }
   }
 `;

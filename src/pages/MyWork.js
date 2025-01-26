@@ -1,4 +1,4 @@
-import nekojita from "../img/nekojita.png";
+// import nekojita from "../img/nekojita.png";
 import imeji from "../img/imeji.png";
 import tiedy from "../img/tiedy.png";
 // import tofudovideo from "../videos/tofudovideo.mov";

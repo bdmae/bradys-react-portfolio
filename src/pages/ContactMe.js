@@ -72,6 +72,10 @@ const ContactStyle = styled(motion.div)`
    max-height: 50vh;
    display: flex;
    flex-direction: column;
+
+   @media (max-width: 1000px) {
+    padding: 1.4rem;
+  }
 `;
 
 const Title = styled.div`
