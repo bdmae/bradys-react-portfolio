@@ -5,6 +5,7 @@ import tiedy from "../img/tiedy.png";
 import evolanycorporate from "../img/evolanycorporate.png";
 import CMScatalogpage from "../img/CMScatalogpage.png";
 import designsystem from "../img/designsystem.png";
+import sowlogo from "../img/sowlogo.png"
 
 // components
 import Tag from "../components/Tag";
@@ -87,6 +88,32 @@ const MyWork = () => {
         </RowWrapper>
       </Project>
       <Project>
+      <motion.h2 variants={fade}>Business Client Management Dashboard</motion.h2>
+        <motion.h3 variants={fade}>Role: Frontend Lead</motion.h3>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <RowWrapper>
+          <ResponsivePortraitImg
+            variants={photoAnim}
+            src={sowlogo}
+            alt="Sow Experience Site Logo"
+          />
+          <Description>
+            <TagsWrapper>
+              <Tag>JavaScript (with JQuery)</Tag>
+              <Tag>Tailwind</Tag>
+              <Tag>HTML (slim)</Tag>
+              <Tag>Ruby</Tag>
+            </TagsWrapper>
+            <div class="details-wrapper">
+              <p>
+              Spearheaded the frontend development for business clients management which allows them to place catalog orders and track them via a dashboard,
+              using Tailwind CSS for design and custom UI interactions with JQuery and vanilla JavaScript.
+              </p>
+            </div>
+          </Description>
+        </RowWrapper>
+      </Project>
+      <Project>
         <motion.h2 variants={fade}>Corporate Website</motion.h2>
         <motion.h3 variants={fade}>Role: Lead Developer</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
@@ -141,7 +168,7 @@ const MyWork = () => {
                 Developed a responsive, user-friendly interface for Tiedy,
                 a web application acting as a virtual business card manager for online meetings.
                 I implemented seamless UI and UX for key user journies, 
-                including creating new rooms and the authentification flow via meeting invite.
+                including authenticating upon entering new meeting rooms, editing user profiles and creating new meeting rooms.
               </p>
             </div>
             <ButtonWrapper>
