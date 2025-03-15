@@ -37,12 +37,13 @@ const SkillsSection = () => {
                 <TagsWrapper isLandingPage={true}>
                   <Tag>HTML</Tag>
                   <Tag>CSS/SCSS</Tag>
-                  <Tag>JavaScript</Tag>
                   <Tag>Typescript</Tag>
+                  <Tag>(Vanilla) JavaScript</Tag>
                   <Tag>React</Tag>
                   <Tag>Vue</Tag>
-                  <Tag>Tailwind</Tag>
                   <Tag>Styled Components</Tag>
+                  <Tag>Tailwind</Tag>
+                  <Tag>Figma</Tag>
                 </TagsWrapper>
               </RowWrapper>
               <RowWrapper class="backend">
@@ -51,21 +52,30 @@ const SkillsSection = () => {
                 </div>
                 <TagsWrapper isLandingPage={true}>
                   <Tag>Ruby on Rails</Tag>
+                  <Tag>SQL</Tag>
                   <Tag>PHP</Tag>
                 </TagsWrapper>
               </RowWrapper>
-              <RowWrapper class="other">
+              <RowWrapper class="devops">
                 <div class="subtitle-wrapper">
-                  <h3>Other</h3>
+                  <h3>DevOps</h3>
                 </div>
                 <TagsWrapper isLandingPage={true}>
                   <Tag>GitHub</Tag>
                   <Tag>Git</Tag>
                   <Tag>AWS</Tag>
                   <Tag>CircleCI</Tag>
+                  <Tag>Docker</Tag>
+                  <Tag>Sentry.io</Tag>
+                </TagsWrapper>
+              </RowWrapper>
+              <RowWrapper class="other">
+                <div class="subtitle-wrapper">
+                  <h3>Testing</h3>
+                </div>
+                <TagsWrapper isLandingPage={true}>
                   <Tag>Rspec</Tag>
                   <Tag>Cucumber-Gherkin</Tag>
-                  <Tag>Figma</Tag>
                 </TagsWrapper>
               </RowWrapper>
             </div>

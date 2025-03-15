@@ -29,20 +29,21 @@ const Nav = () => {
         </Link>
       </h1>
       <ul>
-      <li className="hide-on-mobile">
-        <Link to="/">who am I?</Link>
-      </li>
-      <li className="projects">
-        <Link to="/work">projects</Link>
-      </li>
-        <li className="contact">
-          <Link to="/contact">
-            <i class="ph ph-envelope-simple"></i>
-          </Link>
+        <li className="hide-on-mobile">
+          <Link to="/">who am I?</Link>
         </li>
+        <div className='mobile-nav-options'>
+          <li className="projects">
+            <Link to="/work">projects</Link>
+          </li>
+            <li className="contact">
+              <Link to="/contact">
+                <i class="ph ph-envelope-simple"></i>
+              </Link>
+            </li>
+        </div>
       </ul>
     </StyledNav>
-
   );
 };
 
@@ -96,11 +97,23 @@ const StyledNav = styled.nav`
     font-weight: bold;
     padding-left: 10rem;
     position: relative;
+
+    @media (max-width: 1100px) {
+      padding-left: 0;
+    }
   }
 
-  .contact {
-    font-size: 1.6rem;
+  .mobile-nav-options {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+
+    .contact {
+      font-size: 1.8rem;
+    }
   }
+
 
   .hide-on-mobile {
     display: inline-block;

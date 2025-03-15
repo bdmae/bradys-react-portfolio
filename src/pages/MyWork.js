@@ -1,10 +1,10 @@
 // import nekojita from "../img/nekojita.png";
-import imeji from "../img/imeji.png";
 import tiedy from "../img/tiedy.png";
+import keigoifyvideo from "../videos/keigoifyvideo.mov";
 // import tofudovideo from "../videos/tofudovideo.mov";
 import evolanycorporate from "../img/evolanycorporate.png";
 import CMScatalogpage from "../img/CMScatalogpage.png";
-import designsystem from "../img/designsystem.png";
+// import designsystem from "../img/designsystem.png";
 import sowlogo from "../img/sowlogo.png"
 
 // components
@@ -42,9 +42,10 @@ const MyWork = () => {
           <Description>
             <TagsWrapper>
               <Tag>JavaScript</Tag>
-              <Tag>Ruby on Rails</Tag>
-              <Tag>HTML (slim)</Tag>
               <Tag>CSS/SCSS</Tag>
+              <Tag>Ruby on Rails</Tag>
+              <Tag>Figma</Tag>
+              <Tag>Design System</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
@@ -63,6 +64,44 @@ const MyWork = () => {
         </RowWrapper>
       </Project>
       <Project>
+        <motion.h2 variants={fade}>Keigoify App</motion.h2>
+        <motion.h3 variants={fade}>Personal Project</motion.h3>
+        <motion.div variants={lineAnim} className="line"></motion.div>
+        <RowWrapper>
+         <ResponsiveVideo
+            src={keigoifyvideo}
+            controls
+            muted
+            autoPlay={"autoplay"}
+            preLoad="auto"
+            loop
+          >
+            {" "}
+            Keigoify not able to load.
+          </ResponsiveVideo>
+          <Description>
+            <TagsWrapper>
+              <Tag>React JS</Tag>
+              <Tag>TypeScript</Tag>
+              <Tag>OpenAI Api</Tag>
+            </TagsWrapper>
+            <div class="details-wrapper">
+              <p>
+                Keigoify is a simple web app that translates any language to Japanese language with three settings of 'formality', such as casual, polite, and honorific utilising OpenAI's GPT-3.5 turbo model API.
+                It was created to help me with general written communication in work or personal life.
+              </p>
+            </div>
+            <ButtonWrapper>
+              <a href="https://keigoify.netlify.app/" target="_blank" rel="noopener noreferrer">
+                <motion.button variants={fade}>
+                  see website
+                </motion.button>
+              </a>
+            </ButtonWrapper>
+          </Description>
+        </RowWrapper>
+      </Project>
+      {/* <Project>
         <motion.h2 variants={fade}>Atomic Design System</motion.h2>
         <motion.h3 variants={fade}>Role: Co-lead</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
@@ -86,7 +125,7 @@ const MyWork = () => {
             </div>
           </Description>
         </RowWrapper>
-      </Project>
+      </Project> */}
       <Project>
       <motion.h2 variants={fade}>Business Client Management Dashboard</motion.h2>
         <motion.h3 variants={fade}>Role: Frontend Lead</motion.h3>
@@ -99,10 +138,11 @@ const MyWork = () => {
           />
           <Description>
             <TagsWrapper>
-              <Tag>JavaScript (with JQuery)</Tag>
+              <Tag>JavaScript</Tag>
               <Tag>Tailwind</Tag>
-              <Tag>HTML (slim)</Tag>
-              <Tag>Ruby</Tag>
+              <Tag>Ruby on Rails</Tag>
+              <Tag>Figma</Tag>
+              <Tag>Design System</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
@@ -161,7 +201,8 @@ const MyWork = () => {
             <TagsWrapper>
               <Tag>React</Tag>
               <Tag>Rest Apis</Tag>
-              <Tag>Collaboration</Tag>
+              <Tag>Lua</Tag>
+              <Tag>Docker</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
@@ -181,9 +222,9 @@ const MyWork = () => {
           </Description>
         </RowWrapper>
       </Project>
-      <Project>
+      {/* <Project>
         <motion.h2 variants={fade}>Imeji Photo Gallery</motion.h2>
-        <motion.h3 variants={fade}>Project for fun</motion.h3>
+        <motion.h3 variants={fade}>Personal Project</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
             <ResponsiveImg
@@ -211,7 +252,7 @@ const MyWork = () => {
             </ButtonWrapper>
           </Description>
         </RowWrapper>
-      </Project>
+      </Project> */}
       {/* <Project>
         <motion.h2 variants={fade}>Nekojita Blog Website</motion.h2>
         <motion.h3 variants={fade}>Project for fun</motion.h3>
@@ -323,6 +364,16 @@ const ResponsivePortraitImg = styled(motion.img)`
   border-radius: 0.6rem;
 
   @media (max-width: 786px) {
+    width: 100%;
+  }
+`;
+
+const ResponsiveVideo = styled(motion.video)`
+  width: 28%;
+  object-fit: cover;
+  border-radius: 0.8rem;
+
+  @media (max-width: 1100px) {
     width: 100%;
   }
 `;
