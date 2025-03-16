@@ -77,13 +77,15 @@ const MyWork = () => {
             loop
           >
             {" "}
-            Keigoify not able to load.
+            Keigoify video not able to load.
           </ResponsiveVideo>
           <Description>
             <TagsWrapper>
-              <Tag>React JS</Tag>
+              <Tag>React</Tag>
               <Tag>TypeScript</Tag>
-              <Tag>OpenAI Api</Tag>
+              <Tag>Styled Components</Tag>
+              <Tag>Netlify</Tag>
+              <Tag>OpenAI API</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
@@ -94,7 +96,7 @@ const MyWork = () => {
             <ButtonWrapper>
               <a href="https://keigoify.netlify.app/" target="_blank" rel="noopener noreferrer">
                 <motion.button variants={fade}>
-                  see website
+                  see app
                 </motion.button>
               </a>
             </ButtonWrapper>
