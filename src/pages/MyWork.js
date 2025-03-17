@@ -44,8 +44,7 @@ const MyWork = () => {
               <Tag>JavaScript</Tag>
               <Tag>CSS/SCSS</Tag>
               <Tag>Ruby on Rails</Tag>
-              <Tag>Figma</Tag>
-              <Tag>Design System</Tag>
+              <Tag>Figma Design System</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
@@ -54,9 +53,9 @@ const MyWork = () => {
               </p>
             </div>
             <ButtonWrapper>
-              <a href="https://www.sowxp.co.jp/catalogs/198" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.sowxp.co.jp/catalogs/537" target="_blank" rel="noopener noreferrer">
                 <motion.button variants={fade}>
-                  see website
+                  see cms-converted page
                 </motion.button>
               </a>
             </ButtonWrapper>
@@ -64,7 +63,7 @@ const MyWork = () => {
         </RowWrapper>
       </Project>
       <Project>
-        <motion.h2 variants={fade}>Keigoify App</motion.h2>
+        <motion.h2 variants={fade}>Keigoify</motion.h2>
         <motion.h3 variants={fade}>Personal Project</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
@@ -84,13 +83,11 @@ const MyWork = () => {
               <Tag>React</Tag>
               <Tag>TypeScript</Tag>
               <Tag>Styled Components</Tag>
-              <Tag>Netlify</Tag>
               <Tag>OpenAI API</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
-                Keigoify is a simple web app that translates any language to Japanese language with three settings of 'formality', such as casual, polite, and honorific utilising OpenAI's GPT-3.5 turbo model API.
-                It was created to help me with general written communication in work or personal life.
+                Keigo is a simple React app utilising OpenAI that translates any language to Japanese, with the ability to choose between 3 levels of 'formality' (casual, polite, and honorific) in a fun and interactive way.
               </p>
             </div>
             <ButtonWrapper>
@@ -143,8 +140,7 @@ const MyWork = () => {
               <Tag>JavaScript</Tag>
               <Tag>Tailwind</Tag>
               <Tag>Ruby on Rails</Tag>
-              <Tag>Figma</Tag>
-              <Tag>Design System</Tag>
+              <Tag>Figma Design System</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
@@ -215,9 +211,9 @@ const MyWork = () => {
               </p>
             </div>
             <ButtonWrapper>
-              <a href="https://chromewebstore.google.com/detail/tiedy/phijiocdmmhgaajomdgffmpceehgdiji" target="_blank" rel="noopener noreferrer">
+              <a href="https://tiedy.co/" target="_blank" rel="noopener noreferrer">
                 <motion.button variants={fade}>
-                  see chrome extension
+                  see details
                 </motion.button>
               </a>
             </ButtonWrapper>
@@ -253,64 +249,6 @@ const MyWork = () => {
               </a>
             </ButtonWrapper>
           </Description>
-        </RowWrapper>
-      </Project> */}
-      {/* <Project>
-        <motion.h2 variants={fade}>Nekojita Blog Website</motion.h2>
-        <motion.h3 variants={fade}>Project for fun</motion.h3>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <RowWrapper>
-          <ResponsiveImg
-            variants={photoAnim}
-            src={nekojita}
-            alt="Nekojita blog site landing page"
-          />
-          <Description>
-            <TagsWrapper>
-              <Tag>JavaScript</Tag>
-              <Tag>Scroll Magic</Tag>
-              <Tag>UI/UX Design</Tag>
-            </TagsWrapper>
-            <p>
-              A creative Blog website concept project, bringing
-              them to life through JS and Framer Motion animation. Developing it
-              into a real platform where I can share my stories and experiences in
-              Japan.
-            </p>
-            <ButtonWrapper>
-              <a href="https://nekojita.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <motion.button variants={fade}>see website</motion.button>
-              </a>
-            </ButtonWrapper>
-          </Description>
-        </RowWrapper>
-      </Project> */}
-      {/* <Project>
-        <motion.h2 variants={fade}>tofudo</motion.h2>
-        <motion.h3 variants={fade}>Project for fun</motion.h3>
-        <motion.div variants={lineAnim} className="line"></motion.div>
-        <RowWrapper>
-          <Description>
-            <TagsWrapper>
-              <Tag>React</Tag>
-            </TagsWrapper>
-            <p>
-              A minimalist todo list with CRUD functionality and fetching from a
-              weather api, built in React JS.
-            </p>
-          </Description>
-          <video
-            src={tofudovideo}
-            controls
-            width="40%"
-            muted
-            autoPlay={"autoplay"}
-            preLoad="auto"
-            loop
-          >
-            {" "}
-            Tofudo video not able to load.
-          </video>
         </RowWrapper>
       </Project> */}
       <ScrollTop />
