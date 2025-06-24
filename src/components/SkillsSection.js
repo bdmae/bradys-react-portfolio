@@ -52,8 +52,8 @@ const SkillsSection = () => {
                 </div>
                 <TagsWrapper isLandingPage={true}>
                   <Tag>Ruby on Rails</Tag>
-                  <Tag>SQL</Tag>
                   <Tag>PHP</Tag>
+                  <Tag>MySQL</Tag>
                 </TagsWrapper>
               </RowWrapper>
               <RowWrapper class="devops">
@@ -75,7 +75,7 @@ const SkillsSection = () => {
                 </div>
                 <TagsWrapper isLandingPage={true}>
                   <Tag>Rspec</Tag>
-                  <Tag>Cucumber-Gherkin</Tag>
+                  <Tag>Cucumber (Gherkin)</Tag>
                 </TagsWrapper>
               </RowWrapper>
             </div>

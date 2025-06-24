@@ -55,7 +55,7 @@ const MyWork = () => {
             <ButtonWrapper>
               <a href="https://www.sowxp.co.jp/catalogs/537" target="_blank" rel="noopener noreferrer">
                 <motion.button variants={fade}>
-                  see cms-converted page
+                  see example
                 </motion.button>
               </a>
             </ButtonWrapper>
@@ -67,7 +67,7 @@ const MyWork = () => {
         <motion.h3 variants={fade}>Personal Project</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
-         <ResponsiveVideo
+          <ResponsiveVideo
             src={keigoifyvideo}
             controls
             muted

@@ -37,18 +37,20 @@ const AboutSection = () => {
           className="title"
         >
           <Hide>
-            <motion.h2 variants={titleAnim}>Hi there,</motion.h2>
             <motion.h2 variants={titleAnim}>
-              I'm <b>Brady</b>.
+              I'm Brady.
             </motion.h2>
           </Hide>
           <Hide>
             <motion.h2 variants={titleAnim} class="rainbow-title">
-              a <span class="rainbow-text">front end fanatic</span>.
+              I <span class="rainbow-text">build tools</span>
+            </motion.h2>
+            <motion.h2 variants={titleAnim}>
+              that make <b>work easier.</b>
             </motion.h2>
           </Hide>
           <motion.p variants={titleAnim}>
-              I’m dedicated to creating digital experiences that are as delightful to use as they are to look at.
+            I build flexible tools and interfaces that make work smoother and experiences better.
           </motion.p>
           <ButtonWrapper isLandingPage={true}>
             <a href="https://www.linkedin.com/in/brady-dornan1996/">

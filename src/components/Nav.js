@@ -116,7 +116,8 @@ const StyledNav = styled.nav`
 
 
   .hide-on-mobile {
-    display: inline-block;
+    display: flex;
+    align-items: center;
   }
 
   @media (max-width: 1100px) {
