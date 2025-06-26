@@ -3,9 +3,17 @@ import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 
+// i18n
+import { useTranslation } from 'react-i18next';
+
 const Nav = () => {
   // for setting border bottom once user scrolls
   const [scrolled, setScrolled] = useState(false);
+
+  // i18n
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => i18n.changeLanguage(lng);
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,11 +31,15 @@ const Nav = () => {
 
   return(
     <StyledNav scrolled={scrolled}>
-      <h1>
+      <div className="logo-wrapper">
         <Link id="logo" to="/">
           bdmae
         </Link>
-      </h1>
+        <div className="language-switcher">
+          <button onClick={() => i18n.changeLanguage('en')}>🇺🇸</button>
+          <button onClick={() => i18n.changeLanguage('ja')}>🇯🇵</button>
+        </div>
+      </div>
       <ul>
         <li className="hide-on-mobile">
           <Link to="/">who am I?</Link>
