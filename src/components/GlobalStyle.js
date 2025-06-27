@@ -5,19 +5,19 @@ import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   @font-face {
-    font-family: 'HelveticaNowText';
-    src: url('./fonts/HelveticaNowText-Regular.woff2') format('woff2'),
-         url('./fonts/HelveticaNowText-Regular.woff') format('woff'),
-         url('./fonts/HelveticaNowText-Regular.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Regular.woff2') format('woff2'),
+         url('./fonts/OpenSans-Regular.woff') format('woff'),
+         url('./fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: 400;
     font-style: normal;
   }
 
   @font-face {
-    font-family: 'HelveticaNowText-bold';
-    src: url('./fonts/HelveticaNowText-Bold.woff2') format('woff2'),
-         url('./fonts/HelveticaNowText-Bold.woff') format('woff'),
-         url('./fonts/HelveticaNowText-Bold.ttf') format('truetype');
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Bold.woff2') format('woff2'),
+         url('./fonts/OpenSans-Bold.woff') format('woff'),
+         url('./fonts/OpenSans-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
   }
@@ -54,8 +54,23 @@ const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
 
-
   button {
+    cursor: pointer;
+  }
+
+  .logo-wrapper {
+    display: flex;
+    gap: 16px;
+  }
+
+  .language-switcher {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  button.primary-button {
     line-height: 1.5;
     background-color: rgba(196, 187, 187, 0.25);
     padding: 1rem 2rem;
@@ -65,7 +80,6 @@ const GlobalStyle = createGlobalStyle`
     font-weight: bold;
     font-family: inherit;
     font-size: 1.1rem;
-    cursor: pointer;
     user-select: none;
     position: relative;
     overflow:hidden;
@@ -78,7 +92,7 @@ const GlobalStyle = createGlobalStyle`
     }
 }
 
-button::before{
+button.primary-button::before{
     content: '';
     position: absolute;
     left: 0;
@@ -89,7 +103,7 @@ button::before{
     z-index: -1;
     transition: width 0.3s ease;
 }
-button:hover::before{
+button.primary-button:hover::before{
     width: 100%;
 }
 

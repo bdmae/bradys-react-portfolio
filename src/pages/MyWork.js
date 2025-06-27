@@ -7,6 +7,9 @@ import CMScatalogpage from "../img/CMScatalogpage.png";
 // import designsystem from "../img/designsystem.png";
 import sowlogo from "../img/sowlogo.png"
 
+// translations
+import { useTranslation } from "react-i18next";
+
 // components
 import Tag from "../components/Tag";
 
@@ -27,11 +30,14 @@ import {
 import ScrollTop from '../components/ScrollTop';
 
 const MyWork = () => {
+
+  const { t } = useTranslation();  
+
   return (
     <Work exit="exit" variants={pageAnimation} initial="hidden" animate="show">
       <Project>
-        <motion.h2 variants={fade}>Ecommerce site CMS-Conversion</motion.h2>
-        <motion.h3 variants={fade}>Role: Frontend</motion.h3>
+        <motion.h2 variants={fade}>{t('projects.ecommerce.title')}</motion.h2>
+        <motion.h3 variants={fade}>{t('projects.ecommerce.role')}</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
           <ResponsivePortraitImg
@@ -48,14 +54,13 @@ const MyWork = () => {
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
-              Led the frontend initiative to transform product pages into CMS-compatible templates, enabling seamless content updates by non-technical teams. 
-              This shift reduced update times from around a day to just 1-2 hours, empowering teams to make changes independently and efficiently.
+              {t('projects.ecommerce.description')}
               </p>
             </div>
             <ButtonWrapper>
               <a href="https://www.sowxp.co.jp/catalogs/537" target="_blank" rel="noopener noreferrer">
-                <motion.button variants={fade}>
-                  see example
+                <motion.button className="primary-button" variants={fade}>
+                  {t('projects.ecommerce.button')}
                 </motion.button>
               </a>
             </ButtonWrapper>
@@ -63,8 +68,8 @@ const MyWork = () => {
         </RowWrapper>
       </Project>
       <Project>
-        <motion.h2 variants={fade}>Keigoify</motion.h2>
-        <motion.h3 variants={fade}>Personal Project</motion.h3>
+        <motion.h2 variants={fade}>{t('projects.keigoify.title')}</motion.h2>
+        <motion.h3 variants={fade}>{t('projects.keigoify.role')}</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
           <ResponsiveVideo
@@ -82,18 +87,18 @@ const MyWork = () => {
             <TagsWrapper>
               <Tag>React</Tag>
               <Tag>TypeScript</Tag>
-              <Tag>Styled Components</Tag>
+              <Tag>styled-components</Tag>
               <Tag>OpenAI API</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
-                Keigo is a simple React app utilising OpenAI that translates any language to Japanese, with the ability to choose between 3 levels of 'formality' (casual, polite, and honorific) in a fun and interactive way.
+                {t('projects.keigoify.description')}
               </p>
             </div>
             <ButtonWrapper>
               <a href="https://keigoify.netlify.app/" target="_blank" rel="noopener noreferrer">
-                <motion.button variants={fade}>
-                  see app
+                <motion.button className="primary-button" variants={fade}>
+                  {t('projects.keigoify.button')}
                 </motion.button>
               </a>
             </ButtonWrapper>
@@ -126,8 +131,8 @@ const MyWork = () => {
         </RowWrapper>
       </Project> */}
       <Project>
-      <motion.h2 variants={fade}>Business Client Management Dashboard</motion.h2>
-        <motion.h3 variants={fade}>Role: Frontend Lead</motion.h3>
+      <motion.h2 variants={fade}>{t('projects.dashboard.title')}</motion.h2>
+        <motion.h3 variants={fade}>{t('projects.dashboard.role')}</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
           <ResponsivePortraitImg
@@ -137,23 +142,22 @@ const MyWork = () => {
           />
           <Description>
             <TagsWrapper>
+              <Tag>Tailwind CSS</Tag>
               <Tag>JavaScript</Tag>
-              <Tag>Tailwind</Tag>
               <Tag>Ruby on Rails</Tag>
-              <Tag>Figma Design System</Tag>
+              <Tag>(Figma) Design System</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
-              Spearheaded the frontend development for business clients management which allows them to place catalog orders and track them via a dashboard,
-              using Tailwind CSS for design and custom UI interactions with JQuery and vanilla JavaScript.
+                {t('projects.dashboard.description')}
               </p>
             </div>
           </Description>
         </RowWrapper>
       </Project>
       <Project>
-        <motion.h2 variants={fade}>Corporate Website</motion.h2>
-        <motion.h3 variants={fade}>Role: Lead Developer</motion.h3>
+        <motion.h2 variants={fade}>{t('projects.corporate.title')}</motion.h2>
+        <motion.h3 variants={fade}>{t('projects.corporate.role')}</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
           <ResponsiveImg
@@ -170,15 +174,13 @@ const MyWork = () => {
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
-                Collaborated closely with the lead designer to spearhead the frontend development of the company’s 
-                corporate website, significantly enhancing the company’s branding, 
-                visibility and ultimately helping to attract 40% of its talent.
+                {t('projects.corporate.description')}
               </p>
             </div>
             <ButtonWrapper>
               <a href="https://evolany.com/" target="_blank" rel="noopener noreferrer">
-                <motion.button variants={fade}>
-                  see website
+                <motion.button className="primary-button" variants={fade}>
+                  {t('projects.corporate.button')}
                 </motion.button>
               </a>
             </ButtonWrapper>
@@ -186,8 +188,8 @@ const MyWork = () => {
         </RowWrapper>
       </Project>
       <Project>
-        <motion.h2 variants={fade}>Meeting Contacts Manager</motion.h2>
-        <motion.h3 variants={fade}>Role: Frontend</motion.h3>
+        <motion.h2 variants={fade}>{t('projects.tiedy.title')}</motion.h2>
+        <motion.h3 variants={fade}>{t('projects.tiedy.role')}</motion.h3>
         <motion.div variants={lineAnim} className="line"></motion.div>
         <RowWrapper>
           <Description>
@@ -204,16 +206,13 @@ const MyWork = () => {
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
-                Developed a responsive, user-friendly interface for Tiedy,
-                a web application acting as a virtual business card manager for online meetings.
-                I implemented seamless UI and UX for key user journies, 
-                including authenticating upon entering new meeting rooms, editing user profiles and creating new meeting rooms.
+                {t('projects.tiedy.description')}
               </p>
             </div>
             <ButtonWrapper>
               <a href="https://tiedy.co/" target="_blank" rel="noopener noreferrer">
-                <motion.button variants={fade}>
-                  see details
+                <motion.button className="primary-button" variants={fade}>
+                  {t('projects.tiedy.button')}
                 </motion.button>
               </a>
             </ButtonWrapper>

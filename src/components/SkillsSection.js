@@ -9,11 +9,16 @@ import { scrollReveal } from "../animation";
 import { useScroll } from './useScroll';
 import Tag from './Tag';
 
+//i18n
+import { useTranslation } from 'react-i18next';
+
 //the view is saying true when you scroll.
 // we can specify WHEN something is true, we can do that with threshold
 // if we set it to 0.5, we're setting it half way down the frame
 // so we're saying if our elements are in view, start the animation - if not, hide
 const SkillsSection = () => {
+   const { t } = useTranslation();
+
    const [element, controls] = useScroll();
   return (
     <Skills
@@ -27,7 +32,7 @@ const SkillsSection = () => {
           <Card>
             <div className="title-wrapper">
               <i class="ph ph-gear"></i>
-              <h3>Skills</h3>
+              <h3>{t('skills.title')}</h3>
             </div>
             <div className="skills-wrapper">
               <RowWrapper class="frontend">
@@ -41,9 +46,11 @@ const SkillsSection = () => {
                   <Tag>(Vanilla) JavaScript</Tag>
                   <Tag>React</Tag>
                   <Tag>Vue</Tag>
-                  <Tag>Styled Components</Tag>
-                  <Tag>Tailwind</Tag>
+                  <Tag>styled-components</Tag>
+                  <Tag>Tailwind CSS</Tag>
                   <Tag>Figma</Tag>
+                  <Tag>Webflow</Tag>
+                  <Tag>18in</Tag>
                 </TagsWrapper>
               </RowWrapper>
               <RowWrapper class="backend">
@@ -83,32 +90,38 @@ const SkillsSection = () => {
           <Card>
             <div className="title-wrapper">
               <i class="ph ph-house"></i>
-              <h3>Background</h3>
+              <h3>{t('about.backgroundTitle')}</h3>
             </div>
             <p>
-              Began coding during the 2020 pandemic since I had the gift of time given to me on a plate. "If you can't stop
-              thinking about it, don't stop working for it." - is a quote I live by, so I left my whole life
-              in Osaka behind, moved to Tokyo, graduated from LeWagon bootcamp and the rest is history.
+              {t('about.backgroundText')}
             </p>
           </Card>
           <Card>
             <div className="title-wrapper">
               <i class="ph ph-lightbulb"></i>
-              <h3>Goals</h3>
+              <h3>{t('about.goalsTitle')}</h3>
             </div>
             <p>
-              Proven track record of being able to bring any inspiring design to life whilst prioritising user experience.
-              Aim to leverage my skills to contribute to more meaningful projects and to continue learning and growing as a developer.
+              {t('about.goalsText')}
             </p>
           </Card>
           <Card>
             <div className="title-wrapper">
               <i class="ph ph-instagram-logo"></i>
-              <h3 class="">When I'm not coding..</h3>
+              <h3 class="">{t('about.funTitle')}</h3>
             </div>
             <p>
-              I run a <a href="https://www.instagram.com/suika.snap?igsh=NXpjcXYxN3UzY2Rn&utm_source=qr" target="_blank" rel="noopener noreferrer">photography instagram account</a> that shows my love for capturing the different seasons in Japan.
-              Learning Korean as my hobby, one day I will watch squid game without subtitles!
+              {t('about.funText_part1')}
+              {" "}
+              <a
+                  href="https://www.instagram.com/suika.snap?igsh=NXpjcXYxN3UzY2Rn&utm_source=qr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {t('about.funText_link_text')}
+              </a>
+              {" "}
+              {t('about.funText_part2')}
             </p>
           </Card>
         </Cards>

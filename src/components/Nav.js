@@ -5,14 +5,21 @@ import {useState, useEffect} from 'react';
 
 // i18n
 import { useTranslation } from 'react-i18next';
+import '../i18n';
 
 const Nav = () => {
   // for setting border bottom once user scrolls
   const [scrolled, setScrolled] = useState(false);
 
-  // i18n
-  const { t, i18n } = useTranslation();
-  const changeLanguage = (lng) => i18n.changeLanguage(lng);
+  const { i18n } = useTranslation();
+
+  const handleChangeLanguage = (lng) => {
+    if (i18n?.changeLanguage) {
+      i18n.changeLanguage(lng);
+    } else {
+      console.error('i18n is not ready');
+    }
+  };
 
 
   useEffect(() => {
@@ -35,9 +42,9 @@ const Nav = () => {
         <Link id="logo" to="/">
           bdmae
         </Link>
-        <div className="language-switcher">
-          <button onClick={() => i18n.changeLanguage('en')}>🇺🇸</button>
-          <button onClick={() => i18n.changeLanguage('ja')}>🇯🇵</button>
+        <div className="language-switcher-container">
+          <button className="language-switcher" onClick={() => handleChangeLanguage('en')}>🇺🇸</button>
+          <button className="language-switcher" onClick={() => handleChangeLanguage('ja')}>🇯🇵</button>
         </div>
       </div>
       <ul>

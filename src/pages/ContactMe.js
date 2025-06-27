@@ -27,7 +27,7 @@ const ContactMe = () => {
             <Hide>
               <Social variants={titleAnim} className="social">
                 <Circle></Circle>
-                <a href="mailto:bradydornan@gmail.com">
+                <a href="mailto:bradydornan.jobs@gmail.com">
                   <p>Email</p>
                 </a>
               </Social>

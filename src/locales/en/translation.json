@@ -1,18 +1,28 @@
 {
   "banner": {
-    "line1": "I'm Brady.",
-    "line2": "I build tools",
+   "line1": "I'm Brady.",
+    "line2_part1": "I",
+    "line2_part2": "build tools",
     "line3": "that make work easier.",
     "description": "I build flexible tools and interfaces that make work smoother and experiences better.",
     "connect": "let's connect!"
   },
+  "skills" : {
+    "title": "Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "devops": "DevOps",
+    "testing": "Testing"
+  }, 
   "about": {
     "backgroundTitle": "Background",
     "backgroundText": "Began coding during the 2020 pandemic since I had the gift of time given to me on a plate. \"If you can't stop thinking about it, don't stop working for it.\" - is a quote I live by, so I left my whole life in Osaka behind, moved to Tokyo, graduated from LeWagon bootcamp and the rest is history.",
     "goalsTitle": "Goals",
     "goalsText": "Proven track record of being able to bring any inspiring design to life whilst prioritising user experience. Aim to leverage my skills to contribute to more meaningful projects and to continue learning and growing as a developer.",
     "funTitle": "When I'm not coding..",
-    "funText": "I run a photography instagram account that shows my love for capturing the different seasons in Japan. Learning Korean as my hobby, one day I will watch squid game without subtitles!"
+    "funText_part1": "I love capturing Japan’s four seasons in photographs,",
+    "funText_link_text": "which I share on Instagram.",
+    "funText_part2": "I'm also studying Korean as a hobby, and my goal is to one day watch 'Squid Game' without subtitles!"
   },
   "projects": {
     "ecommerce": {
@@ -30,10 +40,10 @@
     "dashboard": {
       "title": "Business Client Management Dashboard",
       "role": "Role: Frontend Lead",
-      "description": "Spearheaded the frontend development for business clients management which allows them to place catalog orders and track them via a dashboard, using Tailwind CSS for design and custom UI interactions with JQuery and vanilla JavaScript."
+      "description": "Spearheaded the frontend development for business clients management which allows them to place catalog orders and track them via a dashboard, using Tailwind CSS for design and custom UI interactions with JavaScript."
     },
     "corporate": {
-      "title": "Corporate Website",
+      "title": "Evolany Corporate Website",
       "role": "Role: Lead Developer",
       "description": "Collaborated closely with the lead designer to spearhead the frontend development of the company’s corporate website, significantly enhancing the company’s branding, visibility and ultimately helping to attract 40% of its talent.",
       "button": "see website"

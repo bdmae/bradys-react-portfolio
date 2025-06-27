@@ -9,12 +9,15 @@ import { motion } from 'framer-motion';
 import { fade } from "../animation";
 import { photoAnim } from "../animation";
 import Wave from "./Wave";
+import { useTranslation } from 'react-i18next';
 //if we want to target an element to make an animation,
 // we simply put "motion." in the tag
 // for example, for a h2 tag, it would become <motion.h2></motion.h2>
 // example
 // <motion.h1 animate={{ opacity: 1, transition:{ duration: 2 } }} initial={{ opacity: 0 }}>Hello</motion.h1>
 const AboutSection = () => {
+
+  const { t } = useTranslation();
 
   const titleAnim = {
     hidden: {opacity: 0},
@@ -38,23 +41,26 @@ const AboutSection = () => {
         >
           <Hide>
             <motion.h2 variants={titleAnim}>
-              I'm Brady.
+              {t('banner.line1')}
             </motion.h2>
           </Hide>
           <Hide>
-            <motion.h2 variants={titleAnim} class="rainbow-title">
-              I <span class="rainbow-text">build tools</span>
+            <motion.h2 variants={titleAnim} className="rainbow-title">
+              {t('banner.line2_part1')}{" "}
+              <span className="rainbow-text">{t('banner.line2_part2')}</span>
             </motion.h2>
             <motion.h2 variants={titleAnim}>
-              that make <b>work easier.</b>
+              {t('banner.line3')}
             </motion.h2>
           </Hide>
           <motion.p variants={titleAnim}>
-            I build flexible tools and interfaces that make work smoother and experiences better.
+            {t('banner.description')}
           </motion.p>
           <ButtonWrapper isLandingPage={true}>
             <a href="https://www.linkedin.com/in/brady-dornan1996/">
-              <motion.button variants={fade}>let's connect!</motion.button>
+              <motion.button variants={fade} className="primary-button">
+                {t('banner.connect')}
+              </motion.button>
             </a>
           </ButtonWrapper>
         </motion.div>
@@ -72,8 +78,5 @@ const AboutSection = () => {
     </About>
   );
 };
-
-//styled components in style.js
-
 
 export default AboutSection;
