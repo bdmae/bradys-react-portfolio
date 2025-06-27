@@ -99,7 +99,7 @@ const StyledNav = styled.nav`
     color: ${(props) => (props.scrolled ? "#fff" : "#000")};
     text-decoration: none;
     transition: color 0.3s ease-in-out; /* Ensure links also transition */
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   ul {
     display: flex;

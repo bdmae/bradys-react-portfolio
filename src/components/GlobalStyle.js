@@ -4,24 +4,6 @@ import {createGlobalStyle} from 'styled-components';
 // mint colour    #23d997;
 
 const GlobalStyle = createGlobalStyle`
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('./fonts/OpenSans-Regular.woff2') format('woff2'),
-         url('./fonts/OpenSans-Regular.woff') format('woff'),
-         url('./fonts/OpenSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-  }
-
-  @font-face {
-    font-family: 'Open Sans';
-    src: url('./fonts/OpenSans-Bold.woff2') format('woff2'),
-         url('./fonts/OpenSans-Bold.woff') format('woff'),
-         url('./fonts/OpenSans-Bold.ttf') format('truetype');
-    font-weight: 700;
-    font-style: normal;
-  }
-
   *{
     margin: 0;
     padidng: 0;
