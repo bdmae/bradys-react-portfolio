@@ -40,17 +40,14 @@ const SkillsSection = () => {
                   <h3>Frontend</h3>
                 </div>
                 <TagsWrapper isLandingPage={true}>
-                  <Tag>HTML</Tag>
-                  <Tag>CSS/SCSS</Tag>
                   <Tag>Typescript</Tag>
                   <Tag>JavaScript</Tag>
                   <Tag>React</Tag>
                   <Tag>Vue</Tag>
-                  <Tag>styled-components</Tag>
+                  <Tag>Styled Components</Tag>
                   <Tag>Tailwind CSS</Tag>
                   <Tag>Figma</Tag>
                   <Tag>Webflow</Tag>
-                  <Tag>18in</Tag>
                 </TagsWrapper>
               </RowWrapper>
               <RowWrapper class="backend">
@@ -62,7 +59,7 @@ const SkillsSection = () => {
                   <Tag>Python</Tag>
                   <Tag>PHP</Tag>
                   <Tag>MySQL</Tag>
-                  <Tag>Postgres</Tag>
+                  <Tag>PostgreSQL</Tag>
                 </TagsWrapper>
               </RowWrapper>
               <RowWrapper class="devops">

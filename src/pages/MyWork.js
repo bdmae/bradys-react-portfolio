@@ -200,7 +200,6 @@ const MyWork = () => {
             />
             <TagsWrapper>
               <Tag>React</Tag>
-              <Tag>Rest Apis</Tag>
               <Tag>Lua</Tag>
               <Tag>Docker</Tag>
             </TagsWrapper>
