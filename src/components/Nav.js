@@ -5,7 +5,6 @@ import {useState, useEffect} from 'react';
 
 // i18n
 import { useTranslation } from 'react-i18next';
-import '../i18n';
 
 const Nav = () => {
   // for setting border bottom once user scrolls
