@@ -47,10 +47,9 @@ const MyWork = () => {
           />
           <Description>
             <TagsWrapper>
-              <Tag>JavaScript</Tag>
-              <Tag>CSS/SCSS</Tag>
               <Tag>Ruby on Rails</Tag>
-              <Tag>Figma Design System</Tag>
+              <Tag>Design System</Tag>
+              <Tag>Figma</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>
@@ -87,7 +86,7 @@ const MyWork = () => {
             <TagsWrapper>
               <Tag>React</Tag>
               <Tag>TypeScript</Tag>
-              <Tag>styled-components</Tag>
+              <Tag>Styled Components</Tag>
               <Tag>OpenAI API</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
@@ -145,7 +144,8 @@ const MyWork = () => {
               <Tag>Tailwind CSS</Tag>
               <Tag>JavaScript</Tag>
               <Tag>Ruby on Rails</Tag>
-              <Tag>(Figma) Design System</Tag>
+              <Tag>Design System</Tag>
+              <Tag>Figma</Tag>
             </TagsWrapper>
             <div class="details-wrapper">
               <p>

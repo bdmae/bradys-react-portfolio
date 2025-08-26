@@ -39,7 +39,7 @@
     },
     "dashboard": {
       "title": "ビジネスクライアント管理ダッシュボード",
-      "role": "担当: フロントエンドリード",
+      "role": "担当: リード開発者",
       "description": "カタログ注文や進捗確認を可能にするダッシュボード機能を開発。Tailwind CSSを用いたデザインと、JavaScriptによるカスタムUIを実装しました。"
     },
     "corporate": {

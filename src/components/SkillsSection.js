@@ -43,7 +43,7 @@ const SkillsSection = () => {
                   <Tag>HTML</Tag>
                   <Tag>CSS/SCSS</Tag>
                   <Tag>Typescript</Tag>
-                  <Tag>(Vanilla) JavaScript</Tag>
+                  <Tag>JavaScript</Tag>
                   <Tag>React</Tag>
                   <Tag>Vue</Tag>
                   <Tag>styled-components</Tag>
@@ -59,8 +59,10 @@ const SkillsSection = () => {
                 </div>
                 <TagsWrapper isLandingPage={true}>
                   <Tag>Ruby on Rails</Tag>
+                  <Tag>Python</Tag>
                   <Tag>PHP</Tag>
                   <Tag>MySQL</Tag>
+                  <Tag>Postgres</Tag>
                 </TagsWrapper>
               </RowWrapper>
               <RowWrapper class="devops">
@@ -82,7 +84,9 @@ const SkillsSection = () => {
                 </div>
                 <TagsWrapper isLandingPage={true}>
                   <Tag>Rspec</Tag>
+                  <Tag>Vitest</Tag>
                   <Tag>Cucumber (Gherkin)</Tag>
+                  <Tag>Selinium WebDriver</Tag>
                 </TagsWrapper>
               </RowWrapper>
             </div>

@@ -39,12 +39,12 @@
     },
     "dashboard": {
       "title": "Business Client Management Dashboard",
-      "role": "Role: Frontend Lead",
+      "role": "Role: Lead",
       "description": "Spearheaded the frontend development for business clients management which allows them to place catalog orders and track them via a dashboard, using Tailwind CSS for design and custom UI interactions with JavaScript."
     },
     "corporate": {
       "title": "Evolany Corporate Website",
-      "role": "Role: Lead Developer",
+      "role": "Role: Lead",
       "description": "Collaborated closely with the lead designer to spearhead the frontend development of the company’s corporate website, significantly enhancing the company’s branding, visibility and ultimately helping to attract 40% of its talent.",
       "button": "see website"
     },
